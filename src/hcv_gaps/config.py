@@ -89,7 +89,8 @@ CONFIG = {
         "use_ipums_api": True,
         "ipums_api_token": "59cba10d8a5da536fc06b59d00bd2ef7132749b49eb77e67e1286a95",
         "download_dir": "data/api_downloads",  # API downloads will be saved in a subfolder in the data directory.
-        "use_hud_api": False,
-        "hud_api_token": ""
+        "clear_api_cache": True,
+        "use_hud_api": False, # Currently not supported, but relevant files are stored in data
+        "hud_api_token": "" #Currently not supported.
     },
 }

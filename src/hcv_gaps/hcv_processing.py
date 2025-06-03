@@ -39,7 +39,7 @@ from .hcv_family_feature_engineering import family_feature_engineering, flatten_
 from .hcv_eligibility_calculation import calculate_hcv_eligibility
 from .hcv_prisoner_adjustment import stratified_selection_for_incarcerated_individuals
 from .hcv_final_outputs import calculate_voucher_gap_and_save
-
+from file_utils import clear_api_downloads  
 def process_hcv_eligibility(config):
     """
     Process Housing Choice Voucher (HCV) eligibility data for a single state-year combination.
@@ -86,15 +86,6 @@ def process_hcv_eligibility(config):
         logging.error("Error: Failed to load incarceration data. Exiting script.")
         exit(1)
     logging.info("Loaded incarceration data")
-
-    # ── DEBUG: inspect the DataFrame before prisoner adjustment ────────
-    logging.info("DEBUG: incarceration_df.shape = %s", incarceration_df.shape)
-    logging.info("DEBUG: incarceration_df.dtypes:\n%s", incarceration_df.dtypes)
-    logging.info("DEBUG: incarceration_df.head():\n%s", incarceration_df.head().to_string())
-    if 'County_Name' in incarceration_df.columns:
-        logging.info("DEBUG: unique County_Name values: %s", incarceration_df['County_Name'].unique()[:10])
-    else:
-        logging.warning("DEBUG: 'County_Name' column not found in incarceration_df")
 
     # Load HUD HCV Data
     hud_hcv_df = load_hud_hcv_data(config['hud_hcv_data_path'])
@@ -147,3 +138,8 @@ def process_hcv_eligibility(config):
         config['year'],
         display_race_stats=config['display_race_stats']
     )
+    # Final Tidy-Up
+    if config.get("clear_api_cache", True):                     
+        cache_dir = config.get("api_downloads_dir", "data/api_downloads")
+        clear_api_downloads(cache_dir)
+        logging.info("Cleared IPUMS api_downloads cache")

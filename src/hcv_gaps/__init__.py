@@ -1,5 +1,7 @@
 """
-HCV-GAPS package initializer.
+HCV-GAPS: A Python package for calculating Housing Choice Voucher gaps for US Counties.
+
+This module initializes the package.
 """
-__all__ = []              
-__version__ = "2.0.0"    
+
+__version__ = "2.0.0"

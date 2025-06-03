@@ -14,14 +14,18 @@ Functions:
 """
 
 import os
-import pandas as pd
 import logging
+from file_utils import (
+    clean_eligibility_df,   
+    tidy_summary_df,        
+)
 
 logging.info("Loaded hcv_final_outputs module")
 
 def save_eligibility_dataframe(eligibility_df, output_dir, state, year):
     """
-    Saves the eligibility DataFrame to a CSV file named with the state and year.
+    Tidies and saves the eligibility DataFrame to a CSV file named with the state and year.
+    If the state is CT and the YEAR is 2023, all County Names are updated to CT's new (as of 2023) Planning Regions'
     
     Parameters:
         eligibility_df (pd.DataFrame): The processed IPUMS DataFrame with eligibility data.
@@ -32,6 +36,10 @@ def save_eligibility_dataframe(eligibility_df, output_dir, state, year):
     Returns:
         None
     """
+    
+    # Clean the Eligibility df--Removes temporary columns.
+    eligibility_df = clean_eligibility_df(eligibility_df, state, year)
+    
     file_name = f"{state}_{year}_eligibility.csv"
     file_path = os.path.join(output_dir, file_name)
     try:
@@ -178,27 +186,22 @@ def calculate_voucher_gap_and_save(ipums_eligibility_df, hud_hcv_df, output_dir,
     if display_race_stats:
         summary_df = add_race_stats(summary_df, hud_hcv_df)
 
-    # Build file name using state and year.
-    if display_race_stats:
-        file_name = f"{state}_{year}_HCV_Gap_Summary_Table_with_race_stats.csv"
-    else:
-        file_name = f"{state}_{year}_HCV_Gap_Summary_Table.csv"
-    file_path = os.path.join(output_dir, file_name)
-    
-    # Ensure the output directory exists.
+    summary_df = tidy_summary_df(summary_df, state)          
+
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
         logging.info("Created missing output directory: " + output_dir)
-    
-    # Save the summary DataFrame.
-    try:
-        summary_df.to_csv(file_path, index=False)
-        logging.info(f"HCV Gap Summary DataFrame saved successfully to {file_path}")
-    except Exception as e:
-        logging.error(f"Error saving HCV Gap Summary DataFrame: {e}")
 
-    # Save the eligibility DataFrame.
+    suffix = "_with_race_stats" if display_race_stats else ""
+    summary_path = os.path.join(
+        output_dir, f"{state}_{year}_HCV_Gap_Summary_Table{suffix}.csv"
+    )
+    summary_df.to_csv(summary_path, index=False)
+    logging.info(f"HCV Gap Summary DataFrame saved successfully to {summary_path}")
+
+    # Save the cleaned eligibility DataFrame
     save_eligibility_dataframe(ipums_eligibility_df, output_dir, state, year)
 
     logging.info(f"Finished processing voucher gap for {state} in {year}")
     return summary_df
+
