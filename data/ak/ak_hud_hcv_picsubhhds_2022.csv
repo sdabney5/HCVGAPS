@@ -1,13 +1,14 @@
-Name,Subsidized units available,% Minority,%White Non-Hispanic
-Prince of Wales-Hyder Census Area County,1,0,0
-Matanuska-Susitna Borough County,516,17,83
-Kenai Peninsula Borough County,557,22,78
-Chugach Census Area County,59,31,69
-Sitka Borough County,40,33,67
-Ketchikan Gateway Borough County,107,39,61
-Wrangell City and Borough County,33,43,57
-Petersburg Census Area County,32,48,52
-Kodiak Island Borough County,109,49,51
-Juneau Borough County,340,49,51
-Fairbanks North Star Borough County,446,49,51
-Anchorage Borough County,2676,66,34
+Quarter,gsl,states,entities,sumlevel,program_label,program,sub_program,Name,code,Subsidized units available,pct_occupied,number_reported,pct_reported,months_since_report,pct_movein,people_per_unit,people_total,rent_per_month,spending_per_month,hh_income,person_income,pct_lt5k,pct_5k_lt10k,pct_10k_lt15k,pct_15k_lt20k,pct_ge20k,pct_wage_major,pct_welfare_major,pct_other_major,pct_median,pct_lt50_median,pct_lt30_median,pct_2adults,pct_1adult,pct_female_head,pct_female_head_child,pct_disabled_lt62,pct_disabled_ge62,pct_disabled_all,pct_lt24_head,pct_age25_50,pct_age51_61,pct_age62plus,pct_age85plus,% Minority,pct_black_nonhsp,pct_native_american_nonhsp,pct_asian_pacific_nonhsp,pct_white_nothsp,pct_black_hsp,pct_wht_hsp,pct_oth_hsp,pct_hispanic,pct_multi,months_waiting,months_from_movein,pct_utility_allow,ave_util_allow,pct_bed1,pct_bed2,pct_bed3,pct_overhoused,tpoverty,tminority,tpct_ownsfd,fedhse,cbsa,place,latitude,longitude,state,pha_total_units,ha_size,%White Non-Hispanic
+2022-12-31,County,AK Alaska,AK Anchorage Municipality 02020,9,Housing Choice Vouchers,3,,Anchorage Borough County,02020,2676,92,2434,99,8,13,1.9,4651,550,618,21635,11322,10,5,17,34,33,20,4,74,23,97,81,5,25,65,25,46,56,30,3,37,23,37,1,66,25,18,14,34,2,6,2,10,10,-1,79,70,110,41,41,18,25,12,38,24,,,,,,AK,,,34.0
+2022-12-31,County,AK Alaska,AK Chugach Census Area 02063,9,Housing Choice Vouchers,3,,Chugach Census Area,02063,59,92,54,99,8,15,1.7,94,464,618,16140,9272,15,10,25,25,25,20,2,74,19,98,83,4,28,63,24,40,58,32,4,33,19,44,2,31,4,15,6,69,4,4,-1,7,9,-1,67,48,155,33,46,20,31,0,0,0,,,,,,AK,,,69.0
+2022-12-31,County,AK Alaska,AK Fairbanks North Star Borough 02090,9,Housing Choice Vouchers,3,,Fairbanks North Star Borough,02090,446,92,406,99,7,23,1.7,672,504,618,18125,10951,13,6,14,37,31,20,2,76,24,96,75,3,23,63,23,53,69,38,2,40,25,33,0,49,12,24,5,51,1,5,1,7,9,-1,65,70,149,55,32,13,20,12,36,35,,,,,,AK,,,51.0
+2022-12-31,County,AK Alaska,AK Juneau City and Borough 02110,9,Housing Choice Vouchers,3,,Juneau Borough County,02110,340,92,309,99,10,5,1.4,431,542,618,20592,14763,6,4,16,42,32,16,3,81,23,97,82,3,8,57,8,69,52,48,1,29,26,44,2,49,3,37,6,51,-1,4,0,4,8,-1,87,69,133,55,34,11,28,10,34,42,,,,,,AK,,,51.0
+2022-12-31,County,AK Alaska,AK Kenai Peninsula Borough 02122,9,Housing Choice Vouchers,3,,Kenai Peninsula Borough,02122,557,92,507,99,9,22,1.5,777,535,618,18609,12142,5,5,17,44,29,22,2,74,26,97,74,3,17,61,16,45,44,31,1,36,18,46,3,22,1,14,3,78,-1,4,0,4,6,-1,62,75,143,44,43,13,35,11,16,63,,,,,,AK,,,78.0
+2022-12-31,County,AK Alaska,AK Ketchikan Gateway Borough 02130,9,Housing Choice Vouchers,3,,Ketchikan Gateway Borough,02130,107,92,97,99,10,12,1.6,157,522,618,20363,12581,5,2,13,47,33,25,1,73,28,96,74,5,20,75,23,51,50,33,2,35,18,45,1,39,3,28,5,61,1,2,-1,3,12,-1,81,57,174,59,34,7,13,11,41,36,,,,,,AK,,,61.0
+2022-12-31,County,AK Alaska,AK Kodiak Island Borough 02150,9,Housing Choice Vouchers,3,,Kodiak Island Borough,02150,109,92,99,99,9,13,1.8,178,558,618,22441,12481,6,10,17,26,40,33,3,64,26,94,68,4,25,70,26,43,47,26,4,45,17,33,1,49,-1,17,29,51,-1,2,1,3,4,-1,57,80,120,61,27,12,13,9,50,53,,,,,,AK,,,51.0
+2022-12-31,County,AK Alaska,AK Matanuska-Susitna Borough 02170,9,Housing Choice Vouchers,3,,Matanuska-Susitna Borough,02170,516,92,469,99,8,14,1.8,821,570,618,19977,11412,6,3,19,42,31,17,4,78,27,96,74,5,19,70,17,59,72,41,1,32,24,44,1,17,5,7,2,83,0,2,0,3,4,-1,79,75,149,33,47,19,39,11,18,69,,,,,,AK,,,83.0
+2022-12-31,County,AK Alaska,AK Petersburg Borough 02195,9,Housing Choice Vouchers,3,,Petersburg Census Area County,02195,32,92,29,99,13,17,1.5,44,490,618,16379,10796,8,8,8,44,32,21,3,62,25,90,66,3,17,62,17,35,56,36,-1,41,28,31,-1,48,17,21,10,52,-1,-1,-1,0,10,-1,75,55,219,45,41,14,31,6,31,74,,,,,,AK,,,52.0
+2022-12-31,County,AK Alaska,AK Prince of Wales-Hyder Census Area 02198,9,Housing Choice Vouchers,3,,Prince of Wales-Hyder Census Area,02198,1,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,AK,,,
+2022-12-31,County,AK Alaska,AK Sitka City and Borough 02220,9,Housing Choice Vouchers,3,,Sitka Borough County,02220,40,92,36,99,7,42,1.4,51,583,618,19310,13631,6,6,14,47,28,31,3,67,27,89,75,6,11,72,17,40,44,31,3,39,14,44,-1,33,3,22,3,67,-1,6,-1,6,6,-1,38,69,315,67,31,3,19,9,37,46,,,,,,AK,,,67.0
+2022-12-31,County,AK Alaska,AK Wrangell City and Borough 02275,9,Housing Choice Vouchers,3,,Wrangell City and Borough,02275,33,92,30,99,12,13,1.3,39,425,618,16044,12342,-1,-1,38,45,17,7,7,83,26,100,83,-1,10,60,10,74,27,46,-1,40,23,37,-1,43,7,37,-1,57,-1,-1,-1,0,23,-1,59,93,88,30,63,7,60,8,28,69,,,,,,AK,,,57.0
+2022-12-31,County,,02XXX,9,Housing Choice Vouchers,3,,Missing County,02XXX,7,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,AK,,,

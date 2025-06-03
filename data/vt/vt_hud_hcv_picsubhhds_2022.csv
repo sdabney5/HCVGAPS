@@ -1,15 +1,16 @@
-Name,Subsidized units available,% Minority,%White Non-Hispanic
-Orleans County,102,2,98
-Orange County,140,2,98
-Grand Isle County,56,2,98
-Addison County,273,2,98
-Bennington County,745,3,97
-Washington County,630,4,96
-Rutland County,821,4,96
-Essex County,25,5,95
-Caledonia County,234,5,95
-Windsor County,641,6,94
-Lamoille County,123,6,94
-Franklin County,757,6,94
-Windham County,968,10,90
-Chittenden County,3759,20,80
+Quarter,gsl,states,entities,sumlevel,program_label,program,sub_program,Name,code,Subsidized units available,pct_occupied,number_reported,pct_reported,months_since_report,pct_movein,people_per_unit,people_total,rent_per_month,spending_per_month,hh_income,person_income,pct_lt5k,pct_5k_lt10k,pct_10k_lt15k,pct_15k_lt20k,pct_ge20k,pct_wage_major,pct_welfare_major,pct_other_major,pct_median,pct_lt50_median,pct_lt30_median,pct_2adults,pct_1adult,pct_female_head,pct_female_head_child,pct_disabled_lt62,pct_disabled_ge62,pct_disabled_all,pct_lt24_head,pct_age25_50,pct_age51_61,pct_age62plus,pct_age85plus,% Minority,pct_black_nonhsp,pct_native_american_nonhsp,pct_asian_pacific_nonhsp,pct_white_nothsp,pct_black_hsp,pct_wht_hsp,pct_oth_hsp,pct_hispanic,pct_multi,months_waiting,months_from_movein,pct_utility_allow,ave_util_allow,pct_bed1,pct_bed2,pct_bed3,pct_overhoused,tpoverty,tminority,tpct_ownsfd,fedhse,cbsa,place,latitude,longitude,state,pha_total_units,ha_size,%White Non-Hispanic
+2022-12-31,County,VT Vermont,VT Addison County 50001,9,Housing Choice Vouchers,3,,Addison County,50001,273,81,243,100,6,13,1.7,417,379,836,15358,8950,3,14,45,13,25,16,10,72,22,97,78,5,28,66,30,61,74,39,2,45,26,27,1,2,1,1,0,98,-1,-1,-1,0,0,12,110,72,107,54,33,13,9,9,10,59,,,,,,VT,,,98.0
+2022-12-31,County,VT Vermont,VT Bennington County 50003,9,Housing Choice Vouchers,3,,Bennington County,50003,745,82,675,100,5,12,2.0,1369,433,688,17680,8717,2,8,48,14,28,18,9,71,26,94,73,5,28,71,30,57,85,38,4,42,22,32,1,3,1,1,-1,97,1,1,-1,2,1,15,83,62,113,54,24,22,8,19,5,44,,,,,,VT,,,97.0
+2022-12-31,County,VT Vermont,VT Caledonia County 50005,9,Housing Choice Vouchers,3,,Caledonia County,50005,234,81,209,100,5,23,1.8,371,380,836,14864,8373,3,10,49,14,25,15,8,71,23,97,78,7,20,67,23,58,77,41,6,39,23,31,2,5,1,2,0,95,-1,0,-1,0,3,5,83,58,147,54,26,20,16,16,6,54,,,,,,VT,,,95.0
+2022-12-31,County,VT Vermont,VT Chittenden County 50007,9,Housing Choice Vouchers,3,,Chittenden County,50007,3759,78,3355,100,5,10,2.1,6895,451,1009,18528,9015,2,9,38,17,33,24,7,64,22,96,79,6,28,66,29,54,63,31,2,47,21,31,2,20,12,1,4,80,0,2,0,2,2,17,101,63,137,46,35,20,12,11,9,23,,,,,,VT,,,80.0
+2022-12-31,County,VT Vermont,VT Essex County 50009,9,Housing Choice Vouchers,3,,Essex County,50009,25,81,22,100,5,18,2.0,43,366,836,15304,7830,-1,18,45,9,27,14,5,82,23,100,68,9,14,50,23,60,67,40,-1,27,23,50,-1,5,-1,5,-1,95,-1,-1,-1,0,0,12,92,41,105,59,18,23,5,8,4,78,,,,,,VT,,,95.0
+2022-12-31,County,VT Vermont,VT Franklin County 50011,9,Housing Choice Vouchers,3,,Franklin County,50011,757,81,675,100,6,15,2.0,1383,383,836,15836,7729,6,12,41,15,26,17,11,68,18,93,79,6,32,76,34,50,72,33,2,48,20,30,3,6,1,3,0,94,0,1,0,2,1,16,113,64,180,39,37,24,16,10,6,57,,,,,,VT,,,94.0
+2022-12-31,County,VT Vermont,VT Grand Isle County 50013,9,Housing Choice Vouchers,3,,Grand Isle County,50013,56,81,50,100,6,32,2.7,137,458,836,18662,6811,2,10,42,15,31,24,18,54,13,62,52,10,48,86,54,33,45,17,2,62,16,20,6,2,-1,2,-1,98,-1,-1,-1,0,0,13,83,64,248,22,36,42,16,7,5,82,,,,,,VT,,,98.0
+2022-12-31,County,VT Vermont,VT Lamoille County 50015,9,Housing Choice Vouchers,3,,Lamoille County,50015,123,81,110,100,5,18,1.9,212,396,836,14593,7572,4,14,45,19,19,13,13,73,22,98,79,5,31,77,34,55,73,38,1,46,29,24,1,6,2,1,-1,94,1,3,-1,4,1,5,129,66,119,45,38,17,11,15,4,62,,,,,,VT,,,94.0
+2022-12-31,County,VT Vermont,VT Orange County 50017,9,Housing Choice Vouchers,3,,Orange County,50017,140,80,123,100,6,22,1.7,207,358,833,14125,8393,3,9,49,19,19,10,4,83,22,99,82,7,15,59,20,71,66,45,2,37,24,37,4,2,-1,2,-1,98,-1,-1,-1,0,1,12,99,77,116,53,34,13,18,11,4,74,,,,,,VT,,,98.0
+2022-12-31,County,VT Vermont,VT Orleans County 50019,9,Housing Choice Vouchers,3,,Orleans County,50019,102,81,91,100,6,10,1.7,155,343,836,13281,7797,3,11,61,13,11,9,13,76,21,99,89,4,23,65,22,59,86,43,2,33,26,38,2,2,1,-1,-1,98,-1,1,-1,1,0,22,135,75,161,55,31,14,15,14,5,65,,,,,,VT,,,98.0
+2022-12-31,County,VT Vermont,VT Rutland County 50021,9,Housing Choice Vouchers,3,,Rutland County,50021,821,87,750,100,4,13,1.6,1216,390,691,16034,9889,2,7,50,18,23,15,5,79,25,97,75,2,21,68,21,66,61,44,2,37,25,36,2,4,2,1,0,96,0,1,-1,1,1,10,90,62,114,65,23,12,8,12,5,56,,,,,,VT,,,96.0
+2022-12-31,County,VT Vermont,VT Washington County 50023,9,Housing Choice Vouchers,3,,Washington County,50023,630,76,503,100,6,14,1.7,879,379,764,14898,8525,4,13,45,19,19,13,13,72,22,98,83,5,25,69,27,60,75,42,4,41,24,31,2,4,2,1,1,96,-1,1,-1,1,1,23,117,70,134,51,34,16,13,14,6,47,,,,,,VT,,,96.0
+2022-12-31,County,VT Vermont,VT Windham County 50025,9,Housing Choice Vouchers,3,,Windham County,50025,968,77,796,100,6,12,1.6,1311,376,684,15826,9609,4,9,49,14,23,17,6,73,24,95,76,4,22,67,23,62,64,43,3,39,23,35,3,10,4,2,1,90,0,3,0,3,2,17,79,53,112,62,23,14,8,20,8,48,,,,,,VT,,,90.0
+2022-12-31,County,VT Vermont,VT Windsor County 50027,9,Housing Choice Vouchers,3,,Windsor County,50027,641,82,553,100,5,17,1.7,942,404,707,16734,9824,2,8,43,20,28,15,8,74,25,95,73,4,23,69,24,61,63,41,3,36,22,38,3,6,2,1,0,94,-1,3,-1,3,1,11,97,57,118,57,27,16,11,13,5,59,,,,,,VT,,,94.0
+2022-12-31,County,,50XXX,9,Housing Choice Vouchers,3,,Missing County,50XXX,53,78,46,100,5,2,2.3,104,11,860,16807,7434,2,7,44,16,30,20,9,65,-1,-1,-1,7,30,74,33,60,82,33,-1,57,20,24,2,15,7,2,4,85,-1,2,-1,2,0,13,14,2,62,11,-1,-1,-1,-1,-1,-1,,,,,,VT,,,85.0

@@ -86,7 +86,16 @@ def process_hcv_eligibility(config):
         logging.error("Error: Failed to load incarceration data. Exiting script.")
         exit(1)
     logging.info("Loaded incarceration data")
-    
+
+    # ── DEBUG: inspect the DataFrame before prisoner adjustment ────────
+    logging.info("DEBUG: incarceration_df.shape = %s", incarceration_df.shape)
+    logging.info("DEBUG: incarceration_df.dtypes:\n%s", incarceration_df.dtypes)
+    logging.info("DEBUG: incarceration_df.head():\n%s", incarceration_df.head().to_string())
+    if 'County_Name' in incarceration_df.columns:
+        logging.info("DEBUG: unique County_Name values: %s", incarceration_df['County_Name'].unique()[:10])
+    else:
+        logging.warning("DEBUG: 'County_Name' column not found in incarceration_df")
+
     # Load HUD HCV Data
     hud_hcv_df = load_hud_hcv_data(config['hud_hcv_data_path'])
     if hud_hcv_df is None:
@@ -121,7 +130,7 @@ def process_hcv_eligibility(config):
 
     # Adjust for Prisoners
     ipums_df = stratified_selection_for_incarcerated_individuals(
-        ipums_df, 
+        ipums_df,
         incarceration_df,
         config['prisoners_identified_by_GQTYPE2'],
         config['race_sampling'],
@@ -130,12 +139,11 @@ def process_hcv_eligibility(config):
     logging.info("Complete: adjusted for prisoners")
 
     # Final Outputs:
-    # Call the final outputs function.
     calculate_voucher_gap_and_save(
         ipums_df,
         hud_hcv_df,
         config['output_directory'],
         config['state'],
-        config['year'],    
+        config['year'],
         display_race_stats=config['display_race_stats']
     )

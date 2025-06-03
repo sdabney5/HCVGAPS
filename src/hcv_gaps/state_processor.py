@@ -47,69 +47,53 @@ def update_config_for_state(config, state):
     # Do not update hud_hcv_data_path here because it is year-specific.
     return state_config
 
-import os
-import logging
-import zipfile  # in case you need to handle zipped files
-import pandas as pd
-from .api_calls import fetch_ipums_data_api
+
 
 def get_ipums_data_file(config):
     """
-    Check if the IPUMS data file for the current state and year exists.
-    If it does not, force the API function to download the data into a dedicated
-    subdirectory with a recognizable file name.
-    
-    The file is stored under:
-      <data_dir>/api_downloads/<STATE>/ipums_api_downloads/<STATE>_ipums_<YEAR>.csv
-    
-    Parameters:
-        config (dict): The configuration dictionary (must include "state" and "year").
-        
-    Returns:
-        str: The file path to the IPUMS data file, or None if the download fails.
+    1) If api_settings.use_ipums_api is False AND ipums_data_path is a real file, return it.
+    2) If api_settings.use_ipums_api is True, fetch via IPUMS API (saving to the usual folder).
+    3) If ipums_data_path is literally "API" or empty, fetch via API.
+    4) Else: user has disabled API but given a bad path → error.
     """
-    base_data_dir = config["data_dir"]
-    
-    # Create the desired downloads folder: data/api_downloads/<STATE>/ipums_api_downloads
-    desired_downloads_folder = os.path.join(base_data_dir, "api_downloads", config["state"], "ipums_api_downloads")
-    if not os.path.exists(desired_downloads_folder):
-        os.makedirs(desired_downloads_folder, exist_ok=True)
-        logging.info(f"Created desired API downloads folder: {desired_downloads_folder}")
-    
-    # Construct the desired file name (e.g., FL_ipums_2022.csv) and full path.
-    desired_file_name = f"{config['state']}_ipums_{config['year']}.csv"
-    desired_file_path = os.path.join(desired_downloads_folder, desired_file_name)
-    
-    # If the file already exists, return its path.
-    if os.path.exists(desired_file_path):
-        logging.info(f"Found existing IPUMS data file: {desired_file_path}")
-        return desired_file_path
-    else:
-        logging.info(f"No existing IPUMS file for {config['state']} {config['year']}. Fetching via API...")
-        
-        # Temporarily override the download_dir in api_settings to our desired folder.
-        original_download_dir = config["api_settings"].get("download_dir", "api_downloads")
-        config["api_settings"]["download_dir"] = desired_downloads_folder
-        
-        # Fetch the data via the API.
-        df = fetch_ipums_data_api(config)
-        if df is not None:
-            try:
-                # Save the DataFrame to our desired file path.
-                df.to_csv(desired_file_path, index=False)
-                logging.info(f"Downloaded IPUMS data saved to {desired_file_path}")
-                # Optionally, restore the original download_dir.
-                config["api_settings"]["download_dir"] = original_download_dir
-                return desired_file_path
-            except Exception as e:
-                logging.error(f"Error saving IPUMS data to file: {e}")
-                # Restore original download_dir even if saving fails.
-                config["api_settings"]["download_dir"] = original_download_dir
-                return None
+    # unpack
+    local_path = config.get("ipums_data_path", "").strip()
+    use_api    = config.get("api_settings", {}).get("use_ipums_api", False)
+
+    # 1. user wants local only
+    if not use_api and local_path and local_path.upper() != "API":
+        if os.path.exists(local_path):
+            logging.info(f"Loading IPUMS data from local file: {local_path}")
+            return local_path
         else:
-            logging.error("Failed to fetch IPUMS data via API.")
-            config["api_settings"]["download_dir"] = original_download_dir
-            return None
+            raise FileNotFoundError(
+                f"CONFIG: use_ipums_api=False but ipums_data_path='{local_path}' not found."
+            )
+
+    # define where API should drop it
+    base_dir = config["data_dir"]
+    dl_dir   = os.path.join(base_dir, config["state"].lower(), "api_downloads", "ipums_api_downloads")
+    os.makedirs(dl_dir, exist_ok=True)
+    fn       = f"{config['state'].lower()}_ipums_{config['year']}.csv"
+    out_path = os.path.join(dl_dir, fn)
+
+    # 2. or 3. fetch via API
+    if use_api or not local_path or local_path.upper() == "API":
+        logging.info("Fetching IPUMS via API…")
+        # temporarily override download_dir so any internal code that looks there will see our dl_dir
+        config["api_settings"]["download_dir"] = dl_dir
+        df = fetch_ipums_data_api(config)
+        if df is None:
+            raise RuntimeError("Failed to fetch IPUMS data from API.")
+        df.to_csv(out_path, index=False)
+        logging.info(f"Saved IPUMS CSV to {out_path}")
+        return out_path
+
+    # should never get here
+    raise RuntimeError("IPUMS configuration logic fell through unexpectedly.")
+    
+    
+    
 def process_all_states(config):
     """
     Process HCV eligibility data for all states and years defined in the configuration.
@@ -148,6 +132,7 @@ def process_all_states(config):
             state_config["hud_hcv_data_path"] = config["hud_hcv_template"].format(
                 data_dir=config["data_dir"], state=state, year=year)
             ipums_file = get_ipums_data_file(state_config)
+            state_config["ipums_data_path"] = ipums_file
             if ipums_file is None:
                 logging.error(f"Skipping {state.upper()} {year} due to IPUMS data download failure.")
                 continue

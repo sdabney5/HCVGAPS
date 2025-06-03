@@ -79,7 +79,7 @@ CONFIG = {
     "hud_hcv_template": "{data_dir}/{state}/{state}_hud_hcv_picsubhhds_{year}.csv",
 
     # Other configuration options:
-    "verbose": False,
+    "verbose": True,
     "prisoners_identified_by_GQTYPE2": False,
     "race_sampling": True,
     "display_race_stats": True,

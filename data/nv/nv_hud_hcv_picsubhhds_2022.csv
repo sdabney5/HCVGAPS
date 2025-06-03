@@ -1,17 +1,18 @@
-Name,Subsidized units available,% Minority,%White Non-Hispanic
-White Pine County,3,0,0
-Storey County,5,0,0
-Pershing County,3,0,0
-Mineral County,10,0,0
-Lincoln County,1,0,0
-Lander County,6,0,0
-Esmeralda County,1,0,0
-Lyon County,170,17,83
-Douglas County,229,20,80
-Carson City County,709,21,79
-Churchill County,55,31,69
-Nye County,340,32,68
-Washoe County,2968,35,65
-Elko County,68,35,65
-Humboldt County,47,36,64
-Clark County,12071,81,19
+Quarter,gsl,states,entities,sumlevel,program_label,program,sub_program,Name,code,Subsidized units available,pct_occupied,number_reported,pct_reported,months_since_report,pct_movein,people_per_unit,people_total,rent_per_month,spending_per_month,hh_income,person_income,pct_lt5k,pct_5k_lt10k,pct_10k_lt15k,pct_15k_lt20k,pct_ge20k,pct_wage_major,pct_welfare_major,pct_other_major,pct_median,pct_lt50_median,pct_lt30_median,pct_2adults,pct_1adult,pct_female_head,pct_female_head_child,pct_disabled_lt62,pct_disabled_ge62,pct_disabled_all,pct_lt24_head,pct_age25_50,pct_age51_61,pct_age62plus,pct_age85plus,% Minority,pct_black_nonhsp,pct_native_american_nonhsp,pct_asian_pacific_nonhsp,pct_white_nothsp,pct_black_hsp,pct_wht_hsp,pct_oth_hsp,pct_hispanic,pct_multi,months_waiting,months_from_movein,pct_utility_allow,ave_util_allow,pct_bed1,pct_bed2,pct_bed3,pct_overhoused,tpoverty,tminority,tpct_ownsfd,fedhse,cbsa,place,latitude,longitude,state,pha_total_units,ha_size,%White Non-Hispanic
+2022-12-31,County,NV Nevada,NV Churchill County 32001,9,Housing Choice Vouchers,3,,Churchill County,32001,55,70,42,100,5,14,1.9,79,399,816,15763,8380,3,13,38,30,18,19,-1,74,24,93,79,7,24,67,26,59,85,41,2,43,24,31,-1,31,10,2,2,69,2,14,-1,17,0,7,101,93,135,43,40,17,19,18,28,62,,,,,,NV,,,69.0
+2022-12-31,County,NV Nevada,NV Clark County 32003,9,Housing Choice Vouchers,3,,Clark County,32003,12071,92,11817,100,6,8,2.4,28901,448,1071,16537,6762,8,10,37,12,32,27,1,61,24,91,72,3,41,77,41,35,77,24,1,49,23,27,1,81,68,1,2,19,1,9,0,10,1,11,135,87,146,27,31,42,26,20,57,40,,,,,,NV,,,19.0
+2022-12-31,County,NV Nevada,NV Douglas County 32005,9,Housing Choice Vouchers,3,,Douglas County,32005,229,70,176,100,6,6,1.9,329,387,816,15729,8414,8,4,46,18,25,18,-1,79,23,97,76,7,20,78,22,45,67,34,-1,27,24,49,3,20,3,6,-1,80,-1,11,1,12,2,6,126,97,114,20,51,30,44,10,19,66,,,,,,NV,,,80.0
+2022-12-31,County,NV Nevada,NV Elko County 32007,9,Housing Choice Vouchers,3,,Elko County,32007,68,70,52,100,6,19,2.2,116,282,816,11790,5285,11,18,36,11,23,15,4,65,15,100,87,-1,48,81,46,41,64,23,6,62,12,21,-1,35,21,2,-1,65,2,10,-1,12,8,11,64,100,102,25,46,29,19,14,39,52,,,,,,NV,,,65.0
+2022-12-31,County,NV Nevada,NV Esmeralda County 32009,9,Housing Choice Vouchers,3,,Esmeralda County,32009,1,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,NV,,,
+2022-12-31,County,NV Nevada,NV Humboldt County 32013,9,Housing Choice Vouchers,3,,Humboldt County,32013,47,70,36,100,5,36,2.4,86,377,816,15832,6627,3,12,30,27,27,22,-1,69,20,100,81,8,31,78,33,26,47,17,-1,36,17,47,-1,36,14,11,6,64,-1,6,-1,6,6,8,68,100,96,33,25,42,33,17,35,49,,,,,,NV,,,64.0
+2022-12-31,County,NV Nevada,NV Lander County 32015,9,Housing Choice Vouchers,3,,Lander County,32015,6,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,NV,,,
+2022-12-31,County,NV Nevada,NV Lincoln County 32017,9,Housing Choice Vouchers,3,,Lincoln County,32017,1,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,NV,,,
+2022-12-31,County,NV Nevada,NV Lyon County 32019,9,Housing Choice Vouchers,3,,Lyon County,32019,170,70,131,100,6,9,2.2,284,357,816,14044,6478,8,9,46,14,22,13,2,76,21,95,79,13,27,79,35,52,79,36,1,44,23,32,2,17,7,2,1,83,-1,6,1,7,3,11,108,96,142,17,47,36,44,1,4,11,,,,,,NV,,,83.0
+2022-12-31,County,NV Nevada,NV Mineral County 32021,9,Housing Choice Vouchers,3,,Mineral County,32021,10,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,NV,,,
+2022-12-31,County,NV Nevada,NV Nye County 32023,9,Housing Choice Vouchers,3,,Nye County,32023,340,70,262,100,5,12,2.3,609,326,816,12060,5188,18,8,41,16,18,20,2,71,18,99,84,7,37,79,42,36,69,26,2,47,22,29,1,32,20,2,3,68,-1,8,1,8,3,10,90,85,132,18,45,38,32,1,1,3,,,,,,NV,,,68.0
+2022-12-31,County,NV Nevada,NV Pershing County 32027,9,Housing Choice Vouchers,3,,Pershing County,32027,3,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,NV,,,
+2022-12-31,County,NV Nevada,NV Storey County 32029,9,Housing Choice Vouchers,3,,Storey County,32029,5,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,NV,,,
+2022-12-31,County,NV Nevada,NV Washoe County 32031,9,Housing Choice Vouchers,3,,Washoe County,32031,2968,86,2624,100,6,15,1.7,4347,414,687,16527,9976,5,13,37,17,28,18,0,76,23,95,76,2,21,67,21,45,58,35,1,26,20,52,4,35,15,1,4,65,1,14,1,15,1,-1,333,81,67,60,26,15,19,10,27,25,,,,,,NV,,,65.0
+2022-12-31,County,NV Nevada,NV White Pine County 32033,9,Housing Choice Vouchers,3,,White Pine County,32033,3,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,NV,,,
+2022-12-31,County,NV Nevada,NV Carson City 32510,9,Housing Choice Vouchers,3,,Carson City,32510,709,71,547,100,5,10,1.6,885,340,819,12969,8016,7,9,54,13,17,14,1,77,21,97,81,3,19,69,19,52,63,38,1,29,23,47,3,21,7,4,1,79,0,9,0,10,3,18,99,83,86,54,34,12,21,10,27,49,,,,,,NV,,,79.0
+2022-12-31,County,,32XXX,9,Housing Choice Vouchers,3,,Missing County,32XXX,111,89,105,100,5,-1,2.2,234,41,1007,15928,7147,6,20,26,18,29,26,2,62,-1,-1,-1,3,44,87,44,45,75,27,1,57,23,19,1,86,73,-1,3,14,1,9,-1,10,1,-1,127,9,80,99,1,-1,-1,-1,-1,-1,,,,,,NV,,,14.0

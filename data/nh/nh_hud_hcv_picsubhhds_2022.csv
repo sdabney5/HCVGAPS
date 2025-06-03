@@ -1,11 +1,12 @@
-Name,Subsidized units available,% Minority,%White Non-Hispanic
-Sullivan County,322,3,97
-Coos County,437,3,97
-Carroll County,108,3,97
-Belknap County,651,4,96
-Cheshire County,935,5,95
-Rockingham County,1485,7,93
-Strafford County,1651,8,92
-Grafton County,374,8,92
-Merrimack County,878,10,90
-Hillsborough County,4677,28,72
+Quarter,gsl,states,entities,sumlevel,program_label,program,sub_program,Name,code,Subsidized units available,pct_occupied,number_reported,pct_reported,months_since_report,pct_movein,people_per_unit,people_total,rent_per_month,spending_per_month,hh_income,person_income,pct_lt5k,pct_5k_lt10k,pct_10k_lt15k,pct_15k_lt20k,pct_ge20k,pct_wage_major,pct_welfare_major,pct_other_major,pct_median,pct_lt50_median,pct_lt30_median,pct_2adults,pct_1adult,pct_female_head,pct_female_head_child,pct_disabled_lt62,pct_disabled_ge62,pct_disabled_all,pct_lt24_head,pct_age25_50,pct_age51_61,pct_age62plus,pct_age85plus,% Minority,pct_black_nonhsp,pct_native_american_nonhsp,pct_asian_pacific_nonhsp,pct_white_nothsp,pct_black_hsp,pct_wht_hsp,pct_oth_hsp,pct_hispanic,pct_multi,months_waiting,months_from_movein,pct_utility_allow,ave_util_allow,pct_bed1,pct_bed2,pct_bed3,pct_overhoused,tpoverty,tminority,tpct_ownsfd,fedhse,cbsa,place,latitude,longitude,state,pha_total_units,ha_size,%White Non-Hispanic
+2022-12-31,County,NH New Hampshire,NH Belknap County 33001,9,Housing Choice Vouchers,3,,Belknap County,33001,651,88,596,100,5,10,1.7,1033,415,896,17075,9852,2,8,42,21,28,14,2,82,24,98,77,5,18,64,19,68,67,45,1,30,25,45,2,4,1,1,0,96,0,1,-1,2,0,22,102,59,124,54,28,18,17,12,6,49,,,,,,NH,,,96.0
+2022-12-31,County,NH New Hampshire,NH Carroll County 33003,9,Housing Choice Vouchers,3,,Carroll County,33003,108,89,112,100,4,4,1.7,191,405,1141,16171,9482,3,7,46,10,34,9,2,87,23,99,71,4,16,78,18,75,51,42,-1,25,28,47,4,3,1,1,-1,97,-1,1,-1,1,1,80,144,88,188,48,26,26,29,1,0,9,,,,,,NH,,,97.0
+2022-12-31,County,NH New Hampshire,NH Cheshire County 33005,9,Housing Choice Vouchers,3,,Cheshire County,33005,935,64,815,100,7,10,1.8,1438,198,477,18064,10238,1,8,40,18,33,20,2,76,25,95,72,4,23,69,23,73,60,44,2,43,23,32,3,5,1,2,1,95,0,1,-1,1,2,21,389,33,141,54,26,20,13,10,5,44,,,,,,NH,,,95.0
+2022-12-31,County,NH New Hampshire,NH Coos County 33007,9,Housing Choice Vouchers,3,,Coos County,33007,437,67,317,100,5,14,1.5,489,395,672,15330,9938,3,5,47,23,23,14,2,81,22,99,84,3,17,68,18,66,59,43,3,32,27,37,2,3,0,1,1,97,0,0,-1,1,0,5,82,79,115,61,29,10,14,17,4,52,,,,,,NH,,,97.0
+2022-12-31,County,NH New Hampshire,NH Grafton County 33009,9,Housing Choice Vouchers,3,,Grafton County,33009,374,88,361,100,5,10,1.5,550,418,957,16730,10981,3,6,40,21,30,16,2,76,24,95,76,1,16,61,15,69,67,51,1,31,31,37,1,8,2,2,-1,92,-1,4,0,4,2,19,115,55,150,55,29,16,22,1,1,11,,,,,,NH,,,92.0
+2022-12-31,County,NH New Hampshire,NH Hillsborough County 33011,9,Housing Choice Vouchers,3,,Hillsborough County,33011,4677,90,4436,100,5,11,2.0,9090,480,1098,19243,9391,3,6,37,17,38,23,3,70,22,96,77,3,32,74,32,60,66,35,1,45,24,30,2,28,7,1,1,72,1,19,0,20,1,47,111,84,150,44,31,25,11,14,18,23,,,,,,NH,,,72.0
+2022-12-31,County,NH New Hampshire,NH Merrimack County 33013,9,Housing Choice Vouchers,3,,Merrimack County,33013,878,88,867,100,5,10,1.8,1586,461,1040,18247,9975,2,4,39,18,36,18,3,76,22,97,77,4,23,71,24,70,71,46,2,40,26,31,3,10,6,1,1,90,0,2,0,2,2,40,106,81,141,41,38,20,23,11,9,39,,,,,,NH,,,90.0
+2022-12-31,County,NH New Hampshire,NH Rockingham County 33015,9,Housing Choice Vouchers,3,,Rockingham County,33015,1485,90,1463,100,5,10,1.6,2295,483,1039,19616,12505,2,4,36,19,40,17,1,79,22,97,78,2,18,72,18,65,53,43,1,30,24,45,3,7,3,0,1,93,0,3,0,3,1,36,110,81,135,49,38,13,21,7,7,38,,,,,,NH,,,93.0
+2022-12-31,County,NH New Hampshire,NH Strafford County 33017,9,Housing Choice Vouchers,3,,Strafford County,33017,1651,93,1665,100,5,12,2.0,3311,473,995,19265,9688,3,6,35,16,39,22,2,70,21,97,80,4,32,74,32,55,64,35,4,42,24,30,2,8,3,1,1,92,0,3,0,3,2,40,100,84,142,36,39,25,21,6,7,36,,,,,,NH,,,92.0
+2022-12-31,County,NH New Hampshire,NH Sullivan County 33019,9,Housing Choice Vouchers,3,,Sullivan County,33019,322,94,313,100,5,37,1.6,496,385,809,15297,9653,1,8,45,23,23,11,3,81,22,99,82,3,19,62,19,68,70,46,2,34,27,36,1,3,1,1,0,97,-1,1,0,1,1,16,69,56,150,67,21,12,9,20,5,41,,,,,,NH,,,97.0
+2022-12-31,County,,33XXX,9,Housing Choice Vouchers,3,,Missing County,33XXX,65,89,64,100,4,-1,1.8,114,-1,1047,14939,8387,3,13,50,15,19,16,-1,80,-1,-1,-1,5,27,70,28,78,92,47,-1,50,30,20,-1,9,8,-1,-1,91,-1,2,-1,2,0,-1,6,-1,-1,80,-1,-1,-1,-1,-1,-1,,,,,,NH,,,91.0

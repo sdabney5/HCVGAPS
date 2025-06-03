@@ -1,12 +1,13 @@
-Name,Subsidized units available,% Minority,%White Non-Hispanic
-Carbon County,11,0,0
-Johnson County,19,0,100
-Sheridan County,246,6,94
-Park County,87,10,90
-Uinta County,89,12,88
-Sweetwater County,71,12,88
-Campbell County,248,12,88
-Natrona County,600,16,84
-Albany County,188,17,83
-Fremont County,102,26,74
-Laramie County,1028,31,69
+Quarter,gsl,states,entities,sumlevel,program_label,program,sub_program,Name,code,Subsidized units available,pct_occupied,number_reported,pct_reported,months_since_report,pct_movein,people_per_unit,people_total,rent_per_month,spending_per_month,hh_income,person_income,pct_lt5k,pct_5k_lt10k,pct_10k_lt15k,pct_15k_lt20k,pct_ge20k,pct_wage_major,pct_welfare_major,pct_other_major,pct_median,pct_lt50_median,pct_lt30_median,pct_2adults,pct_1adult,pct_female_head,pct_female_head_child,pct_disabled_lt62,pct_disabled_ge62,pct_disabled_all,pct_lt24_head,pct_age25_50,pct_age51_61,pct_age62plus,pct_age85plus,% Minority,pct_black_nonhsp,pct_native_american_nonhsp,pct_asian_pacific_nonhsp,pct_white_nothsp,pct_black_hsp,pct_wht_hsp,pct_oth_hsp,pct_hispanic,pct_multi,months_waiting,months_from_movein,pct_utility_allow,ave_util_allow,pct_bed1,pct_bed2,pct_bed3,pct_overhoused,tpoverty,tminority,tpct_ownsfd,fedhse,cbsa,place,latitude,longitude,state,pha_total_units,ha_size,%White Non-Hispanic
+2022-12-31,County,WY Wyoming,WY Albany County 56001,9,Housing Choice Vouchers,3,,Albany County,56001,188,92,173,99,6,8,1.3,230,368,526,14595,10978,2,9,49,22,18,12,-1,87,23,99,83,3,8,59,8,81,50,55,-1,37,26,37,1,17,2,3,1,83,-1,11,-1,11,1,10,70,72,83,42,48,10,46,24,14,31,,,,,,WY,,,83.0
+2022-12-31,County,WY Wyoming,WY Campbell County 56005,9,Housing Choice Vouchers,3,,Campbell County,56005,248,92,228,99,6,17,1.6,359,369,526,15040,9552,5,9,35,29,21,15,0,82,21,100,86,1,22,75,21,56,38,32,3,29,19,49,3,12,1,2,-1,88,1,8,-1,9,0,9,60,75,98,30,45,25,48,12,11,44,,,,,,WY,,,88.0
+2022-12-31,County,WY Wyoming,WY Carbon County 56007,9,Housing Choice Vouchers,3,,Carbon County,56007,11,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,WY,,,
+2022-12-31,County,WY Wyoming,WY Fremont County 56013,9,Housing Choice Vouchers,3,,Fremont County,56013,102,92,94,99,6,6,1.9,174,374,526,14823,8008,4,8,46,18,24,18,2,74,22,99,81,5,26,71,29,53,58,35,-1,28,24,48,2,26,1,18,-1,74,-1,3,3,6,1,12,71,65,101,32,46,22,33,8,13,52,,,,,,WY,,,74.0
+2022-12-31,County,WY Wyoming,WY Johnson County 56019,9,Housing Choice Vouchers,3,,Johnson County,56019,19,92,17,99,5,-1,1.5,25,407,526,17159,11668,-1,18,35,12,35,24,-1,76,26,94,65,-1,12,65,12,69,50,48,-1,35,41,24,-1,0,-1,-1,-1,100,-1,-1,-1,0,0,-1,74,76,110,29,47,24,47,0,0,0,,,,,,WY,,,100.0
+2022-12-31,County,WY Wyoming,WY Laramie County 56021,9,Housing Choice Vouchers,3,,Laramie County,56021,1028,92,944,99,6,14,1.7,1637,390,526,15136,8728,7,8,43,17,26,18,1,78,22,99,76,3,23,71,24,56,53,36,3,37,20,39,3,31,7,2,0,69,1,20,1,22,0,10,75,88,114,31,43,26,40,8,15,37,,,,,,WY,,,69.0
+2022-12-31,County,WY Wyoming,WY Natrona County 56025,9,Housing Choice Vouchers,3,,Natrona County,56025,600,96,625,100,5,23,1.6,1011,377,576,15531,9601,3,8,45,21,23,21,1,75,23,98,77,2,22,74,22,53,64,38,5,35,22,38,2,16,5,3,1,84,0,6,1,7,3,8,66,73,115,33,47,20,42,13,13,58,,,,,,WY,,,84.0
+2022-12-31,County,WY Wyoming,WY Park County 56029,9,Housing Choice Vouchers,3,,Park County,56029,87,92,80,99,7,10,1.6,131,380,526,15460,9441,4,11,47,11,27,19,-1,79,24,100,76,-1,24,85,24,55,45,33,1,30,19,50,6,10,1,3,1,90,-1,5,-1,5,3,14,75,75,123,28,43,30,44,9,8,49,,,,,,WY,,,90.0
+2022-12-31,County,WY Wyoming,WY Sheridan County 56033,9,Housing Choice Vouchers,3,,Sheridan County,56033,246,92,226,99,6,12,1.4,317,362,526,14703,10482,5,10,45,17,23,12,0,85,23,100,77,1,15,66,15,70,39,42,2,24,25,49,4,6,1,1,-1,94,-1,4,0,4,0,8,72,63,99,48,37,15,34,6,8,68,,,,,,WY,,,94.0
+2022-12-31,County,WY Wyoming,WY Sweetwater County 56037,9,Housing Choice Vouchers,3,,Sweetwater County,56037,71,83,59,100,6,15,1.5,86,338,486,13988,9596,4,12,42,25,18,20,-1,76,20,100,83,2,14,58,15,53,57,38,2,39,24,36,-1,12,-1,-1,2,88,3,5,2,10,3,16,59,69,78,31,51,19,51,10,18,47,,,,,,WY,,,88.0
+2022-12-31,County,WY Wyoming,WY Uinta County 56041,9,Housing Choice Vouchers,3,,Uinta County,56041,89,75,68,100,6,19,1.6,106,391,337,16030,10283,2,2,49,22,26,18,-1,78,24,96,74,1,19,71,21,56,38,33,1,35,13,50,-1,12,6,-1,-1,88,-1,6,-1,6,0,14,65,99,87,34,41,25,44,0,0,0,,,,,,WY,,,88.0
+2022-12-31,County,,56XXX,9,Housing Choice Vouchers,3,,Missing County,56XXX,15,92,14,99,6,-1,1.5,21,-1,526,13092,8728,7,7,64,14,7,7,-1,93,-1,-1,-1,7,14,57,21,70,50,43,7,36,29,29,-1,14,7,-1,-1,86,-1,7,-1,7,0,-1,-1,-1,-1,100,-1,-1,-1,-1,-1,-1,,,,,,WY,,,86.0

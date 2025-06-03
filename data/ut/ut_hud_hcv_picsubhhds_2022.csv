@@ -1,20 +1,21 @@
-Name,Subsidized units available,% Minority,%White Non-Hispanic
-Iron County,277,0,0
-Beaver County,31,0,0
-Summit County,2,0,0
-San Juan County,11,0,0
-Rich County,3,0,0
-Garfield County,1,0,0
-Duchesne County,90,10,90
-Emery County,87,11,89
-Box Elder County,187,11,89
-Tooele County,241,13,87
-Washington County,313,17,83
-Cache County,410,18,82
-Grand County,71,20,80
-Utah County,2066,21,79
-Uintah County,39,21,79
-Carbon County,276,22,78
-Davis County,1124,25,75
-Weber County,1502,29,71
-Salt Lake County,6857,36,64
+Quarter,gsl,states,entities,sumlevel,program_label,program,sub_program,Name,code,Subsidized units available,pct_occupied,number_reported,pct_reported,months_since_report,pct_movein,people_per_unit,people_total,rent_per_month,spending_per_month,hh_income,person_income,pct_lt5k,pct_5k_lt10k,pct_10k_lt15k,pct_15k_lt20k,pct_ge20k,pct_wage_major,pct_welfare_major,pct_other_major,pct_median,pct_lt50_median,pct_lt30_median,pct_2adults,pct_1adult,pct_female_head,pct_female_head_child,pct_disabled_lt62,pct_disabled_ge62,pct_disabled_all,pct_lt24_head,pct_age25_50,pct_age51_61,pct_age62plus,pct_age85plus,% Minority,pct_black_nonhsp,pct_native_american_nonhsp,pct_asian_pacific_nonhsp,pct_white_nothsp,pct_black_hsp,pct_wht_hsp,pct_oth_hsp,pct_hispanic,pct_multi,months_waiting,months_from_movein,pct_utility_allow,ave_util_allow,pct_bed1,pct_bed2,pct_bed3,pct_overhoused,tpoverty,tminority,tpct_ownsfd,fedhse,cbsa,place,latitude,longitude,state,pha_total_units,ha_size,%White Non-Hispanic
+2022-12-31,County,UT Utah,UT Beaver County 49001,9,Housing Choice Vouchers,3,,Beaver County,49001,31,-5,25,-5,-5,-5,-5.0,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,,,,,,UT,,,
+2022-12-31,County,UT Utah,UT Box Elder County 49003,9,Housing Choice Vouchers,3,,Box Elder County,49003,187,83,185,100,5,21,1.7,306,364,531,14818,8958,2,9,49,19,21,16,-1,82,24,99,77,3,19,81,19,75,74,48,1,36,24,39,2,11,3,2,1,89,-1,6,-1,6,1,7,71,90,99,31,46,23,48,11,12,50,,,,,,UT,,,89.0
+2022-12-31,County,UT Utah,UT Cache County 49005,9,Housing Choice Vouchers,3,,Cache County,49005,410,83,406,100,4,22,1.8,732,410,531,16098,8928,2,8,47,19,24,19,1,78,25,98,74,6,22,71,24,71,71,45,3,48,20,29,0,18,4,2,2,82,-1,9,0,10,2,7,71,94,124,17,35,49,55,19,20,30,,,,,,UT,,,82.0
+2022-12-31,County,UT Utah,UT Carbon County 49007,9,Housing Choice Vouchers,3,,Carbon County,49007,276,53,143,97,5,3,1.7,246,324,425,12471,7249,8,11,52,16,14,17,1,74,20,99,85,5,21,73,23,56,93,43,1,43,27,29,1,22,-1,3,1,78,-1,17,-1,17,1,8,100,99,147,8,45,48,66,26,18,69,,,,,,UT,,,78.0
+2022-12-31,County,UT Utah,UT Davis County 49011,9,Housing Choice Vouchers,3,,Davis County,49011,1124,67,817,100,5,5,2.1,1720,422,981,16563,7867,4,6,41,20,29,21,1,73,21,98,83,1,31,75,30,60,77,36,1,52,21,27,2,25,7,1,2,75,0,14,0,15,1,54,111,93,134,30,36,34,31,9,16,47,,,,,,UT,,,75.0
+2022-12-31,County,UT Utah,UT Duchesne County 49013,9,Housing Choice Vouchers,3,,Duchesne County,49013,90,74,68,100,5,22,1.9,129,347,516,14362,7571,3,9,49,18,20,15,-1,81,22,97,82,-1,29,79,29,58,88,41,4,34,26,35,-1,10,1,3,-1,90,-1,4,1,6,0,3,80,84,108,31,35,34,37,4,2,21,,,,,,UT,,,90.0
+2022-12-31,County,UT Utah,UT Emery County 49015,9,Housing Choice Vouchers,3,,Emery County,49015,87,53,45,97,5,2,1.7,77,315,425,12886,7531,10,10,40,26,14,18,-1,76,21,100,73,-1,20,78,20,45,44,30,-1,36,29,36,-1,11,-1,-1,2,89,-1,9,-1,9,0,-1,92,91,130,16,49,36,58,12,9,76,,,,,,UT,,,89.0
+2022-12-31,County,UT Utah,UT Garfield County 49017,9,Housing Choice Vouchers,3,,Garfield County,49017,1,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,UT,,,
+2022-12-31,County,UT Utah,UT Grand County 49019,9,Housing Choice Vouchers,3,,Grand County,49019,71,76,51,95,4,41,1.6,81,395,384,16348,10293,4,10,42,14,30,25,-1,69,25,98,73,-1,22,73,20,15,36,19,-1,29,24,47,-1,20,6,8,-1,80,-1,4,2,6,2,22,54,39,84,45,31,24,29,9,15,39,,,,,,UT,,,80.0
+2022-12-31,County,UT Utah,UT Iron County 49021,9,Housing Choice Vouchers,3,,Iron County,49021,277,-5,287,-5,-5,-5,-5.0,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,,,,,,UT,,,
+2022-12-31,County,UT Utah,UT Rich County 49033,9,Housing Choice Vouchers,3,,Rich County,49033,3,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,UT,,,
+2022-12-31,County,UT Utah,UT Salt Lake County 49035,9,Housing Choice Vouchers,3,,Salt Lake County,49035,6857,89,6514,100,5,14,2.2,14252,390,901,15203,6948,7,10,41,15,27,25,1,62,18,98,85,7,28,65,29,52,74,31,1,44,24,30,1,36,14,2,4,64,0,15,1,16,0,43,91,78,102,45,30,24,15,13,28,34,,,,,,UT,,,64.0
+2022-12-31,County,UT Utah,UT San Juan County 49037,9,Housing Choice Vouchers,3,,San Juan County,49037,11,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,UT,,,
+2022-12-31,County,UT Utah,UT Summit County 49043,9,Housing Choice Vouchers,3,,Summit County,49043,2,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,UT,,,
+2022-12-31,County,UT Utah,UT Tooele County 49045,9,Housing Choice Vouchers,3,,Tooele County,49045,241,81,193,98,5,22,1.9,375,421,632,17569,9042,3,7,44,15,31,25,2,71,24,97,75,7,26,75,30,53,78,38,1,46,19,35,1,13,2,1,1,87,-1,9,-1,9,2,34,83,80,126,26,46,28,36,6,9,29,,,,,,UT,,,87.0
+2022-12-31,County,UT Utah,UT Uintah County 49047,9,Housing Choice Vouchers,3,,Uintah County,49047,39,68,28,100,5,14,1.8,51,364,499,14875,8167,-1,7,52,22,19,29,-1,68,23,96,82,-1,36,86,36,50,70,35,4,39,21,36,-1,21,4,7,-1,79,-1,7,4,11,0,15,119,93,129,18,54,29,46,6,9,28,,,,,,UT,,,79.0
+2022-12-31,County,UT Utah,UT Utah County 49049,9,Housing Choice Vouchers,3,,Utah County,49049,2066,87,1981,100,3,15,2.1,4099,370,934,15394,7440,6,11,42,16,24,28,1,65,20,97,83,4,30,68,30,54,65,31,5,54,16,25,1,21,2,1,3,79,0,15,0,16,1,18,77,80,98,35,28,37,28,10,16,32,,,,,,UT,,,79.0
+2022-12-31,County,UT Utah,UT Washington County 49053,9,Housing Choice Vouchers,3,,Washington County,49053,313,83,334,100,5,13,1.7,560,385,732,16064,9581,2,5,54,16,23,14,0,84,25,96,73,2,20,71,19,71,71,48,2,39,15,43,2,17,3,1,3,83,-1,9,0,9,0,28,92,94,72,33,30,37,43,3,4,14,,,,,,UT,,,83.0
+2022-12-31,County,UT Utah,UT Weber County 49057,9,Housing Choice Vouchers,3,,Weber County,49057,1502,81,1390,100,5,18,1.8,2473,409,828,15633,8787,6,9,43,16,27,22,1,71,20,98,82,1,27,71,25,62,67,40,3,40,25,33,1,29,8,2,1,71,0,18,0,18,2,15,63,86,106,46,38,16,23,18,34,49,,,,,,UT,,,71.0
+2022-12-31,County,,49XXX,9,Housing Choice Vouchers,3,,Missing County,49XXX,33,85,30,100,5,-1,2.4,73,-1,833,13108,5387,11,19,44,7,19,13,3,70,-1,-1,-1,13,37,83,43,63,67,30,3,53,23,20,-1,37,10,7,7,63,-1,13,-1,13,0,-1,9,-1,-1,90,3,7,3,-1,-1,-1,,,,,,UT,,,63.0

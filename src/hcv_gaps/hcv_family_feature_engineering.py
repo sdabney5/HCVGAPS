@@ -30,129 +30,130 @@ import pandas as pd
 import logging
 logging.info("This is a log message from hcv_family_feature_engineering")
 
-
-def family_feature_engineering(df):
+def family_feature_engineering(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Add family-level features to the dataset, including education metrics and race binary columns.
+    Engineer household–level features in an IPUMS-style person-level DataFrame.
 
-    This function processes census data to add representative family-level features, including education metrics
-    and race binary columns. It categorizes family-level race based on the race of the head of household,
-    consistent with HUD's method in HCV reports.
+    The function collapses individual-level records (one row per person) into
+    household-level indicators, then merges those indicators back onto the
+    original DataFrame so that every person row “knows” its household’s
+    characteristics.
 
-    The function aggregates individual-level data to create family-level features while preserving the original
-    individual records. It also creates a new variable, REALHHWT. For single-family households, REALHHWT matches
-    HHWT. For previously multifamily households, REALHHWT is the original statistical weight (HHWT) divided by
-    the number of families originally in the household (NFAMS_B4_SPLIT).
+    **Key traits computed**
 
-    Parameters:
+    ─ Household composition
+        • SENIOR_HOUSEHOLD   – 1 if anyone is 65+  
+        • NUM_CHILDREN       – count of members < 18  
+        • MARRIED_FAMILY_HH  – 1 if `HHTYPE == 1` for any member  
+        • SINGLE_PARENT_HH   – 1 if `HHTYPE in {2, 3}` for any member  
+
+    ─ Veteran / employment
+        • VET_HOUSEHOLD      – 1 if any member has `VETSTAT == 2`  
+        • EMPLOYED           – 1 if any member has `EMPSTAT == 1`  
+
+    ─ Education flags (highest attained by any member)
+        • HS_COMPLETE        – 1 if anyone has `EDUCD ≥ 62`  
+        • BACHELOR_COMPLETE  – 1 if anyone has `EDUCD == 101`  
+        • GRAD_SCHOOL        – 1 if anyone has `EDUCD > 101`  
+
+    ─ Race (one-hot, mutually exclusive; exactly one “1” per household)
+        • White_HH, Black_HH, Asian_HH, Mixed_Race_HH, Other_Race_HH  
+          Race is taken from the head of household (`RELATE == 1`);
+          if absent, the spouse (`RELATE == 2`); otherwise the first member.
+
+    **Performance notes**
+
+    * Vectorised masks → one C-level `groupby`, no Python lambdas.
+    * Memory overhead is a handful of temporary `_` columns that are removed
+      before return.
+    * Omits the legacy string column `HOUSEHOLD_RACE` and the flag
+      `TWO_COLLEGE_GRADS`, which downstream code no longer uses.
+
+    Parameters
     ----------
-    df : pd.DataFrame
-        The input DataFrame containing individual-level census data.
+    df : pandas.DataFrame
+        Person-level IPUMS data containing at least the columns  
+        `FAMILYNUMBER, AGE, VETSTAT, EDUCD, HHTYPE, EMPSTAT, RELATE, RACE`.
 
-    Returns:
+    Returns
     -------
-    pd.DataFrame
-        The updated DataFrame with added family-level features and adjusted household weights.
+    pandas.DataFrame
+        The input DataFrame with the household-level columns listed above
+        merged on.  Column names and dtypes are preserved for all
+        pre-existing fields.
 
-    Notes:
-    -----
-    - This function assumes the DataFrame includes columns for family identification (FAMILYNUMBER),
-      relationship to head of household (RELATE), race (RACE), and various education and income variables.
+    Examples
+    --------
+    >>> people = pd.read_parquet("fl_2022_ipums.parquet")
+    >>> people = family_feature_engineering(people)
+    >>> people.filter(regex="_HH$|NUM_CHILDREN").head()
     """
-    # Helper function to categorize race based on head of household
-    def categorize_race_by_head(relate_codes, race_codes):
-        """
-        Determines the household's race based on the head of household.
-        If no head (RELATE == 1) is found, it uses the spouse (RELATE == 2).
-        If neither are found, it defaults to the first person's race.
-        """
-    
-        # Find the race of the head of household (RELATE == 1)
-        for relate, race in zip(relate_codes, race_codes):
-            if relate == 1:  # Head of Household
-                return categorize_race(race)  # Function to categorize race
-    
-        # If no head of household, check for spouse (RELATE == 2)
-        for relate, race in zip(relate_codes, race_codes):
-            if relate == 2:  # Spouse
-                return categorize_race(race)
-    
-        # If no head or spouse, return the first available race
-        return categorize_race(race_codes[0])
-    
-    # Helper function to categorize race labels
-    def categorize_race(race):
-        if race == 1:
-            return "White"
-        elif race == 2:
-            return "Black"
-        elif race == 3:
-            return "Other"
-        elif race in {4, 5, 6}:
-            return "Asian"
-        elif race in {7, 8, 9}:
-            return "Mixed Race"
-        else:
-            return "Other_Race"
-    
-    # Education categorization function
-    def categorize_education(educ_codes):
-        if educ_codes.max() in range(2, 63):
-            return "High School or Below"
-        elif educ_codes.max() in range(63, 101):
-            return "Some College"
-        elif educ_codes.max() == 101:
-            return "Bachelor's Degree"
-        elif educ_codes.max() in range(102, 117):
-            return "Master's & Above"
-        else:
-            return "No Schooling"
-    
-    # Dictionary for groupby aggregation
-    aggregation = {
-     'AGE': [
-        ('SENIOR_HOUSEHOLD', lambda x: 1 if (x > 64).any() else 0),
-        ('NUM_CHILDREN', lambda x: (x < 18).sum())
-     ],
-     'VETSTAT': [('VET_HOUSEHOLD', lambda x: 1 if (x == 2).any() else 0)],
-     'EDUCD': [
-        ('HIGHEST_EDUC', categorize_education),
-        ('HS_COMPLETE', lambda x: 1 if (x >= 62).any() else 0),
-        ('BACHELOR_COMPLETE', lambda x: 1 if x.eq(101).any() else 0),
-       ('GRAD_SCHOOL', lambda x: 1 if (x > 101).any() else 0),
-       ('TWO_COLLEGE_GRADS', lambda x: 1 if x[x.eq(101)].count() >= 2 else 0)
-     ],
-     'HHTYPE': [
-        ('MARRIED_FAMILY_HH', lambda x: 1 if (x == 1).any() else 0),
-        ('SINGLE_PARENT_HH', lambda x: 1 if (x == 2).any() or (x == 3).any() else 0)
-     ],
-     'EMPSTAT': [('EMPLOYED', lambda x: 1 if (x == 1).any() else 0)],
-        'RACE': [('HOUSEHOLD_RACE', lambda x: categorize_race_by_head(x.tolist(), x.tolist()))],
-        'RELATE': [('RELATE_CODES', lambda x: x.tolist())]
-    }
-    
-    # Perform a single groupby operation
-    logging.info('Aggregating Family Features....')
-    family_features = df.groupby('FAMILYNUMBER').agg(aggregation)
-    
-    # Flatten the multi-index columns
-    family_features.columns = [col[1] for col in family_features.columns.values]
-    
-    # Add binary columns for each race category
-    family_features['White_HH'] = family_features['HOUSEHOLD_RACE'] == 'White'
-    family_features['Black_HH'] = family_features['HOUSEHOLD_RACE'] == 'Black'
-    family_features['Asian_HH'] = family_features['HOUSEHOLD_RACE'] == 'Asian'
-    family_features['Mixed_Race_HH'] = family_features['HOUSEHOLD_RACE'] == 'Mixed Race'
-    family_features['Other_Race_HH'] = family_features['HOUSEHOLD_RACE'] == 'Other_Race'
-    
-    # Drop the RELATE_CODES column that was used for categorization
-    family_features.drop(columns=['RELATE_CODES'], inplace=True)
-    
-    # Merge the aggregated features back to the main df
-    logging.info('Merging aggregated features back to main df')
-    df = df.merge(family_features, on='FAMILYNUMBER', how='left')
-    
+   
+
+    # ---------- 1. per-person Boolean / numeric flags --------------
+    df["_IS_SENIOR"]      = (df["AGE"]  > 64).astype("uint8")
+    df["_IS_CHILD"]       = (df["AGE"]  < 18).astype("uint8")
+    df["_IS_VET"]         = (df["VETSTAT"] == 2).astype("uint8")
+    df["_EDU_HS_PLUS"]    = (df["EDUCD"] >= 62).astype("uint8")
+    df["_EDU_BACHELOR"]   = (df["EDUCD"] == 101).astype("uint8")
+    df["_EDU_GRAD"]       = (df["EDUCD"] > 101).astype("uint8")
+    df["_HHTYPE_MARRIED"] = (df["HHTYPE"] == 1).astype("uint8")
+    df["_HHTYPE_SINGLE"]  = ((df["HHTYPE"] == 2) | (df["HHTYPE"] == 3)).astype("uint8")
+    df["_EMPLOYED"]       = (df["EMPSTAT"] == 1).astype("uint8")
+
+    # ---------- 2. pick representative member & race dummies -------
+    priority = df["RELATE"].replace({1: 0, 2: 1}).fillna(2)
+    rep_idx  = priority.groupby(df["FAMILYNUMBER"], sort=False).idxmin()
+
+    rep = df.loc[rep_idx, ["FAMILYNUMBER", "RACE"]].set_index("FAMILYNUMBER")
+    rep["White_HH"]       =  (rep["RACE"] == 1).astype("uint8")
+    rep["Black_HH"]       =  (rep["RACE"] == 2).astype("uint8")
+    rep["Asian_HH"]       =   rep["RACE"].isin([4, 5, 6]).astype("uint8")
+    rep["Mixed_Race_HH"]  =   rep["RACE"].isin([7, 8, 9]).astype("uint8")
+    rep["Other_Race_HH"]  = (
+        1 - rep[["White_HH", "Black_HH", "Asian_HH", "Mixed_Race_HH"]].sum(axis=1)
+    ).astype("uint8")
+    rep = rep.drop(columns="RACE")
+
+    # ---------- 3. household-level aggregation ---------------------
+    fam = (
+        df.groupby("FAMILYNUMBER", sort=False)
+          .agg(
+              SENIOR_HOUSEHOLD  = ("_IS_SENIOR",      "max"),
+              NUM_CHILDREN      = ("_IS_CHILD",       "sum"),
+              VET_HOUSEHOLD     = ("_IS_VET",         "max"),
+              HS_COMPLETE       = ("_EDU_HS_PLUS",    "max"),
+              BACHELOR_COMPLETE = ("_EDU_BACHELOR",   "max"),
+              GRAD_SCHOOL       = ("_EDU_GRAD",       "max"),
+              MARRIED_FAMILY_HH = ("_HHTYPE_MARRIED", "max"),
+              SINGLE_PARENT_HH  = ("_HHTYPE_SINGLE",  "max"),
+              EMPLOYED          = ("_EMPLOYED",       "max"),
+          )
+          .astype({
+              "SENIOR_HOUSEHOLD":"uint8",
+              "NUM_CHILDREN"    :"uint16",
+              "VET_HOUSEHOLD"   :"uint8",
+              "HS_COMPLETE"     :"uint8",
+              "BACHELOR_COMPLETE":"uint8",
+              "GRAD_SCHOOL"     :"uint8",
+              "MARRIED_FAMILY_HH":"uint8",
+              "SINGLE_PARENT_HH":"uint8",
+              "EMPLOYED"        :"uint8"
+          })
+    )
+
+    # ---------- 4. attach race dummy columns -----------------------
+    fam = fam.join(rep, how="left")
+
+    # ---------- 5. merge back to person-level DataFrame ------------
+    logging.info("Merging aggregated family features back to main DataFrame")
+    df = df.merge(fam.reset_index(), on="FAMILYNUMBER", how="left")
+
+    # ---------- 6. clean temporary helper columns ------------------
+    df.drop(columns=[c for c in df.columns if c.startswith("_")], inplace=True)
+
     return df
+
 
 
 #Function to condense families/households to a single row
@@ -200,6 +201,7 @@ def flatten_households_to_single_rows(df):
                     'VETSTAT', 'VETSTATD', 'FTOTINC']
 
     # Drop the columns
+    logging.info('Flattening households to Single Row...')
     df = df.drop(columns=[col for col in cols_to_drop if col in df.columns])
 
     # The columns where we'll just take the first value since they should all be the same for a family
@@ -209,10 +211,10 @@ def flatten_households_to_single_rows(df):
                         'MORTGAGE', 'MORTAMT1', 'RENTGRS', 'FAMILYNUMBER', 'ACTUAL_HH_INCOME', 'NFAMS_B4_SPLIT',
                         'HHTYPE', 'FOODSTMP', 'VEHICLES', 'NMOTHERS', 'NFATHERS', 'MULTGEN',
                         'MULTGEND', 'FAMSIZE', 'POVERTY', 'SENIOR_HOUSEHOLD', 'NUM_CHILDREN', 'VET_HOUSEHOLD',
-                        'HIGHEST_EDUC', 'MARRIED_FAMILY HH', 'SINGLE_PARENT HH', 'REALHHWT', 'EMPLOYED', 'CITIZEN',
+                        'MARRIED_FAMILY_HH', 'SINGLE_PARENT_HH', 'REALHHWT', 'EMPLOYED', 'CITIZEN',
                         'HISPAN', 'HISPAND', 'RACE', 'RACED', 'White', 'Black', 'Asian', 'Mixed Race',
-                        'Other_Race', 'HOUSEHOLD_RACE', 'HS_COMPLETE', 'BACHELOR_COMPLETE',
-                        'GRAD_SCHOOL', 'TWO_COLLEGE_GRADS', 'SEX', 'MCDC_PUMA_COUNTY_NAMES', 'Multi_County_Flag',
+                        'Other_Race', 'HS_COMPLETE', 'BACHELOR_COMPLETE',
+                        'GRAD_SCHOOL', 'SEX', 'MCDC_PUMA_COUNTY_NAMES', 'Multi_County_Flag',
                         'Black_HH', 'MARRIED_FAMILY_HH', 'Asian_HH', 'Mixed_Race_HH', 'EMPSTAT', 'Other_Race_HH',
                         'SINGLE_PARENT_HH', 'White_HH']
 

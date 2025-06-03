@@ -1,47 +1,48 @@
-Name,Subsidized units available,% Minority,%White Non-Hispanic
-Marion County,216,0,0
-Calhoun County,7,0,0
-Pickens County,268,38,62
-Horry County,1393,65,35
-Laurens County,223,70,30
-Newberry County,276,71,29
-Oconee County,70,73,27
-Greenwood County,974,75,25
-Anderson County,1000,76,24
-York County,967,79,21
-Abbeville County,68,79,21
-Union County,274,81,19
-Edgefield County,209,81,19
-Cherokee County,171,81,19
-Lexington County,942,82,18
-Spartanburg County,2660,84,16
-Chester County,296,84,16
-Saluda County,127,85,15
-Beaufort County,624,85,15
-McCormick County,40,86,14
-Greenville County,3324,86,14
-Kershaw County,189,87,13
-Lancaster County,254,88,12
-Sumter County,934,91,9
-Marlboro County,198,91,9
-Dillon County,135,91,9
-Orangeburg County,104,92,8
-Georgetown County,167,92,8
-Berkeley County,651,92,8
-Hampton County,17,93,7
-Darlington County,311,93,7
-Aiken County,1069,93,7
-Florence County,1030,94,6
-Chesterfield County,182,94,6
-Charleston County,4172,94,6
-Richland County,4519,95,5
-Jasper County,23,95,5
-Fairfield County,133,95,5
-Dorchester County,934,95,5
-Colleton County,146,95,5
-Bamberg County,32,96,4
-Lee County,78,97,3
-Clarendon County,142,97,3
-Williamsburg County,90,100,0
-Barnwell County,37,100,0
-Allendale County,46,100,0
+Quarter,gsl,states,entities,sumlevel,program_label,program,sub_program,Name,code,Subsidized units available,pct_occupied,number_reported,pct_reported,months_since_report,pct_movein,people_per_unit,people_total,rent_per_month,spending_per_month,hh_income,person_income,pct_lt5k,pct_5k_lt10k,pct_10k_lt15k,pct_15k_lt20k,pct_ge20k,pct_wage_major,pct_welfare_major,pct_other_major,pct_median,pct_lt50_median,pct_lt30_median,pct_2adults,pct_1adult,pct_female_head,pct_female_head_child,pct_disabled_lt62,pct_disabled_ge62,pct_disabled_all,pct_lt24_head,pct_age25_50,pct_age51_61,pct_age62plus,pct_age85plus,% Minority,pct_black_nonhsp,pct_native_american_nonhsp,pct_asian_pacific_nonhsp,pct_white_nothsp,pct_black_hsp,pct_wht_hsp,pct_oth_hsp,pct_hispanic,pct_multi,months_waiting,months_from_movein,pct_utility_allow,ave_util_allow,pct_bed1,pct_bed2,pct_bed3,pct_overhoused,tpoverty,tminority,tpct_ownsfd,fedhse,cbsa,place,latitude,longitude,state,pha_total_units,ha_size,%White Non-Hispanic
+2022-12-31,County,SC South Carolina,SC Abbeville County 45001,9,Housing Choice Vouchers,3,,Abbeville County,45001,68,92,62,99,5,23,2.0,123,283,490,11164,5627,6,15,56,15,9,16,-1,71,24,98,71,2,34,71,27,54,63,30,-1,52,23,26,2,79,79,-1,-1,21,-1,-1,-1,0,3,12,84,100,140,31,39,31,31,9,20,32,,,,,,SC,,,21.0
+2022-12-31,County,SC South Carolina,SC Aiken County 45003,9,Housing Choice Vouchers,3,,Aiken County,45003,1069,86,942,100,5,10,2.7,2558,336,690,14515,5345,16,14,30,13,26,39,2,52,23,93,73,1,61,93,60,19,62,11,1,66,14,19,0,93,91,0,-1,7,1,1,-1,2,1,51,97,98,196,7,32,61,37,9,18,32,,,,,,SC,,,7.0
+2022-12-31,County,SC South Carolina,SC Allendale County 45005,9,Housing Choice Vouchers,3,,Allendale County,45005,46,78,37,100,7,3,3.1,113,342,716,13098,4289,27,8,38,3,24,43,3,54,26,81,68,-1,68,97,68,26,100,14,-1,78,14,8,-1,100,100,-1,-1,-1,-1,-1,-1,0,0,31,111,100,274,-1,5,95,32,0,0,0,,,,,,SC,,,0.0
+2022-12-31,County,SC South Carolina,SC Anderson County 45007,9,Housing Choice Vouchers,3,,Anderson County,45007,1000,89,885,100,6,8,2.1,1879,336,516,13320,6274,10,11,46,16,17,23,0,72,23,96,75,1,40,89,40,36,58,22,2,47,20,31,2,76,75,-1,0,24,0,1,-1,1,0,11,109,98,169,15,46,39,43,18,35,50,,,,,,SC,,,24.0
+2022-12-31,County,SC South Carolina,SC Bamberg County 45009,9,Housing Choice Vouchers,3,,Bamberg County,45009,32,78,26,100,7,4,3.1,81,356,716,13492,4331,19,12,23,23,23,31,-1,69,27,92,62,-1,73,100,73,20,100,12,8,54,15,23,-1,96,96,-1,-1,4,-1,-1,-1,0,0,-1,120,100,265,8,27,65,23,1,3,4,,,,,,SC,,,4.0
+2022-12-31,County,SC South Carolina,SC Barnwell County 45011,9,Housing Choice Vouchers,3,,Barnwell County,45011,37,78,30,100,8,-1,2.3,68,362,716,12466,5500,20,23,17,27,13,43,3,53,28,97,57,-1,43,97,43,23,88,21,-1,63,10,27,-1,100,100,-1,-1,-1,-1,-1,-1,0,0,-1,126,100,220,3,43,53,53,31,52,51,,,,,,SC,,,0.0
+2022-12-31,County,SC South Carolina,SC Beaufort County 45013,9,Housing Choice Vouchers,3,,Beaufort County,45013,624,76,522,100,5,13,2.4,1253,450,771,19475,8113,1,15,29,15,40,43,0,56,27,92,64,1,57,91,57,23,44,13,4,57,17,22,2,85,82,-1,0,15,0,2,-1,3,0,25,85,100,147,12,38,50,34,15,42,55,,,,,,SC,,,15.0
+2022-12-31,County,SC South Carolina,SC Berkeley County 45015,9,Housing Choice Vouchers,3,,Berkeley County,45015,651,88,586,100,5,14,2.7,1581,379,795,16103,5969,18,12,27,11,33,40,0,56,21,95,74,1,64,95,63,19,71,13,4,67,13,15,-1,92,88,0,0,8,2,1,1,4,0,24,85,100,178,9,44,47,25,12,36,58,,,,,,SC,,,8.0
+2022-12-31,County,SC South Carolina,SC Calhoun County 45017,9,Housing Choice Vouchers,3,,Calhoun County,45017,7,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,SC,,,
+2022-12-31,County,SC South Carolina,SC Charleston County 45019,9,Housing Choice Vouchers,3,,Charleston County,45019,4172,88,3651,100,5,15,2.4,8691,379,821,15713,6601,13,14,32,12,29,35,1,60,21,96,77,1,49,86,48,22,64,17,3,52,17,28,1,94,92,0,0,6,1,0,0,2,0,22,93,98,165,21,41,38,29,26,69,44,,,,,,SC,,,6.0
+2022-12-31,County,SC South Carolina,SC Cherokee County 45021,9,Housing Choice Vouchers,3,,Cherokee County,45021,171,92,156,99,6,7,2.1,322,373,491,13036,6315,6,9,51,17,16,15,1,76,29,90,56,-1,43,87,42,47,80,30,1,48,19,33,1,81,81,-1,-1,19,-1,-1,-1,0,0,12,102,100,157,13,49,37,41,26,46,55,,,,,,SC,,,19.0
+2022-12-31,County,SC South Carolina,SC Chester County 45023,9,Housing Choice Vouchers,3,,Chester County,45023,296,63,183,98,6,6,2.3,430,355,486,12161,5176,13,17,44,11,15,20,-1,77,25,94,70,1,49,87,49,28,70,18,1,49,21,29,1,84,84,-1,-1,16,-1,1,-1,1,0,26,118,95,258,33,38,29,10,22,57,71,,,,,,SC,,,16.0
+2022-12-31,County,SC South Carolina,SC Chesterfield County 45025,9,Housing Choice Vouchers,3,,Chesterfield County,45025,182,61,106,96,6,4,2.2,229,267,395,10845,5020,10,12,52,13,13,15,1,70,23,94,73,-1,45,87,40,35,86,24,-1,47,25,27,1,94,94,-1,-1,6,-1,-1,-1,0,1,41,136,100,115,9,51,40,44,3,4,4,,,,,,SC,,,6.0
+2022-12-31,County,SC South Carolina,SC Clarendon County 45027,9,Housing Choice Vouchers,3,,Clarendon County,45027,142,81,135,100,5,13,2.3,317,348,812,14086,5999,11,9,41,15,24,26,1,70,29,92,62,4,47,94,50,32,76,24,2,44,25,28,1,97,97,-1,-1,3,-1,-1,-1,0,1,13,134,100,164,9,34,57,41,28,63,58,,,,,,SC,,,3.0
+2022-12-31,County,SC South Carolina,SC Colleton County 45029,9,Housing Choice Vouchers,3,,Colleton County,45029,146,81,138,100,5,20,2.4,325,347,812,13300,5647,11,15,37,15,22,33,-1,61,27,94,62,2,49,90,50,34,82,23,4,52,24,20,1,95,93,-1,-1,5,-1,1,1,2,0,22,99,100,174,16,30,54,33,2,4,6,,,,,,SC,,,5.0
+2022-12-31,County,SC South Carolina,SC Darlington County 45031,9,Housing Choice Vouchers,3,,Darlington County,45031,311,71,216,98,5,14,2.5,548,359,486,15183,5984,11,13,31,18,26,44,1,53,30,87,56,1,57,94,57,26,49,13,3,59,22,16,-1,93,92,-1,-1,7,-1,0,-1,0,0,9,86,100,179,15,35,50,30,24,54,52,,,,,,SC,,,7.0
+2022-12-31,County,SC South Carolina,SC Dillon County 45033,9,Housing Choice Vouchers,3,,Dillon County,45033,135,75,101,100,5,1,2.6,261,297,477,12296,4758,16,11,41,10,22,27,2,60,25,90,71,-1,58,93,58,20,80,15,1,63,11,25,-1,91,89,2,-1,9,-1,-1,-1,0,0,1,143,100,160,6,33,61,38,6,8,7,,,,,,SC,,,9.0
+2022-12-31,County,SC South Carolina,SC Dorchester County 45035,9,Housing Choice Vouchers,3,,Dorchester County,45035,934,89,889,100,6,14,2.6,2354,415,820,17508,6612,15,8,27,11,38,41,0,53,22,94,70,1,61,94,62,21,85,15,3,66,17,15,0,95,93,1,-1,5,1,1,0,2,1,17,99,100,164,4,43,53,35,17,43,53,,,,,,SC,,,5.0
+2022-12-31,County,SC South Carolina,SC Edgefield County 45037,9,Housing Choice Vouchers,3,,Edgefield County,45037,209,92,190,99,6,7,2.0,385,327,491,14041,6930,5,15,47,13,21,24,-1,68,24,96,75,-1,37,86,37,31,60,23,1,43,15,42,4,81,81,-1,-1,19,-1,1,-1,1,1,15,105,100,152,27,31,42,38,11,25,46,,,,,,SC,,,19.0
+2022-12-31,County,SC South Carolina,SC Fairfield County 45039,9,Housing Choice Vouchers,3,,Fairfield County,45039,133,81,126,100,6,10,1.9,243,280,812,11823,6131,10,11,57,10,12,17,-1,77,19,98,88,-1,37,89,37,48,90,34,2,46,21,31,3,95,95,-1,-1,5,-1,-1,-1,0,0,29,154,100,168,9,42,49,54,1,2,3,,,,,,SC,,,5.0
+2022-12-31,County,SC South Carolina,SC Florence County 45041,9,Housing Choice Vouchers,3,,Florence County,45041,1030,74,779,100,5,7,2.5,1986,367,517,15260,5986,15,12,33,13,27,39,1,56,27,88,66,0,57,91,55,25,47,14,1,64,17,18,0,94,93,0,-1,6,0,1,-1,1,1,25,105,100,153,7,34,59,38,21,52,51,,,,,,SC,,,6.0
+2022-12-31,County,SC South Carolina,SC Georgetown County 45043,9,Housing Choice Vouchers,3,,Georgetown County,45043,167,65,123,100,6,13,2.2,273,364,534,15134,6819,12,6,43,13,26,29,1,69,27,94,63,-1,50,85,49,33,60,22,-1,48,24,28,-1,92,89,-1,-1,8,-1,2,-1,2,1,9,92,97,185,21,38,41,27,5,11,12,,,,,,SC,,,8.0
+2022-12-31,County,SC South Carolina,SC Greenville County 45045,9,Housing Choice Vouchers,3,,Greenville County,45045,3324,89,3034,100,5,12,2.2,6631,387,692,15755,7209,12,10,37,15,27,28,0,70,23,95,74,1,43,83,43,30,64,23,1,47,18,34,2,86,83,0,0,14,1,2,0,2,1,32,94,96,150,28,37,35,24,21,53,55,,,,,,SC,,,14.0
+2022-12-31,County,SC South Carolina,SC Greenwood County 45047,9,Housing Choice Vouchers,3,,Greenwood County,45047,974,90,863,99,4,13,2.0,1724,268,468,11362,5687,13,12,50,13,13,23,1,64,25,93,69,1,46,88,46,34,58,21,7,47,19,27,2,75,73,0,0,25,0,1,0,1,0,6,81,100,100,11,62,27,42,17,30,31,,,,,,SC,,,25.0
+2022-12-31,County,SC South Carolina,SC Hampton County 45049,9,Housing Choice Vouchers,3,,Hampton County,45049,17,78,14,100,4,29,2.7,38,410,716,14281,5261,7,29,29,7,29,43,-1,57,27,100,50,-1,64,93,64,8,50,8,-1,64,21,14,-1,93,86,-1,-1,7,7,-1,-1,7,0,-1,71,100,225,-1,64,36,29,3,8,8,,,,,,SC,,,7.0
+2022-12-31,County,SC South Carolina,SC Horry County 45051,9,Housing Choice Vouchers,3,,Horry County,45051,1393,83,1279,100,6,14,2.0,2604,374,799,14983,7359,8,13,40,16,23,27,1,69,28,92,65,2,37,76,37,44,68,29,1,43,27,28,1,65,61,1,0,35,0,3,0,3,1,7,100,85,159,25,37,37,36,18,32,41,,,,,,SC,,,35.0
+2022-12-31,County,SC South Carolina,SC Jasper County 45053,9,Housing Choice Vouchers,3,,Jasper County,45053,23,78,19,100,5,21,2.5,48,366,716,14459,5723,11,22,33,11,22,26,-1,68,29,84,68,-1,42,100,42,21,80,15,-1,63,11,26,-1,95,95,-1,-1,5,-1,-1,-1,0,0,-1,86,100,212,21,16,63,37,2,9,11,,,,,,SC,,,5.0
+2022-12-31,County,SC South Carolina,SC Kershaw County 45055,9,Housing Choice Vouchers,3,,Kershaw County,45055,189,81,179,100,6,15,2.4,424,341,812,13895,5866,11,10,36,14,29,26,-1,67,26,94,62,2,42,92,44,34,80,24,1,52,22,25,-1,87,85,-1,-1,13,1,1,-1,2,0,42,103,100,155,12,44,44,35,19,35,69,,,,,,SC,,,13.0
+2022-12-31,County,SC South Carolina,SC Lancaster County 45057,9,Housing Choice Vouchers,3,,Lancaster County,45057,254,84,210,98,5,4,2.5,535,405,526,16377,6428,8,13,37,13,29,34,1,64,25,94,67,2,52,93,53,26,50,15,2,54,21,23,2,88,87,-1,-1,12,-1,1,-1,1,0,27,109,100,214,11,32,57,38,26,50,66,,,,,,SC,,,12.0
+2022-12-31,County,SC South Carolina,SC Laurens County 45059,9,Housing Choice Vouchers,3,,Laurens County,45059,223,92,203,99,5,7,1.8,366,316,490,12170,6750,6,14,47,21,12,13,0,77,28,97,61,0,28,88,28,56,69,37,1,37,24,38,1,70,69,-1,-1,30,-1,1,-1,1,0,16,102,100,167,24,45,31,43,16,33,48,,,,,,SC,,,30.0
+2022-12-31,County,SC South Carolina,SC Lee County 45061,9,Housing Choice Vouchers,3,,Lee County,45061,78,81,74,100,6,7,2.3,171,279,808,11077,4794,15,15,49,11,8,19,-1,77,24,97,80,4,41,96,43,38,81,24,-1,54,24,22,-1,97,97,-1,-1,3,-1,-1,-1,0,1,13,128,100,178,1,28,70,53,14,51,38,,,,,,SC,,,3.0
+2022-12-31,County,SC South Carolina,SC Lexington County 45063,9,Housing Choice Vouchers,3,,Lexington County,45063,942,81,892,100,6,17,2.2,1950,355,812,14123,6460,11,10,39,14,26,29,1,60,22,95,74,1,44,86,44,30,79,23,2,54,19,24,1,82,79,1,0,18,1,1,-1,2,0,16,116,100,159,12,41,47,41,11,29,51,,,,,,SC,,,18.0
+2022-12-31,County,SC South Carolina,SC McCormick County 45065,9,Housing Choice Vouchers,3,,McCormick County,45065,40,92,36,99,3,11,1.8,65,307,490,11163,6182,9,11,63,14,3,19,-1,78,23,100,83,-1,44,78,44,56,67,34,-1,53,22,25,-1,86,86,-1,-1,14,-1,-1,-1,0,0,15,71,100,143,50,19,31,17,19,62,68,,,,,,SC,,,14.0
+2022-12-31,County,SC South Carolina,SC Marion County 45067,9,Housing Choice Vouchers,3,,Marion County,45067,216,-5,86,-5,-5,-5,-5.0,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,,,,,,SC,,,
+2022-12-31,County,SC South Carolina,SC Marlboro County 45069,9,Housing Choice Vouchers,3,,Marlboro County,45069,198,76,155,100,5,12,2.3,356,294,472,11961,5208,13,10,49,8,19,31,2,54,25,87,74,1,51,91,50,34,65,17,3,60,23,15,1,91,89,1,-1,9,1,1,-1,1,0,22,123,100,151,14,40,46,33,13,33,39,,,,,,SC,,,9.0
+2022-12-31,County,SC South Carolina,SC Newberry County 45071,9,Housing Choice Vouchers,3,,Newberry County,45071,276,69,216,100,6,13,2.0,440,243,786,12949,6357,12,22,37,14,15,28,0,69,27,90,63,1,37,80,36,45,54,25,2,42,29,27,0,71,70,-1,-1,29,0,0,-1,1,0,18,102,96,250,28,21,51,43,11,25,29,,,,,,SC,,,29.0
+2022-12-31,County,SC South Carolina,SC Oconee County 45073,9,Housing Choice Vouchers,3,,Oconee County,45073,70,92,64,99,5,16,1.9,120,346,490,13016,6942,5,12,48,19,16,20,-1,70,24,97,72,-1,39,84,38,49,84,32,-1,48,22,30,-1,73,70,-1,-1,27,2,2,-1,3,5,6,76,100,144,13,56,31,45,6,9,33,,,,,,SC,,,27.0
+2022-12-31,County,SC South Carolina,SC Orangeburg County 45075,9,Housing Choice Vouchers,3,,Orangeburg County,45075,104,78,84,100,4,15,2.8,233,394,716,14689,5296,18,13,30,16,23,31,-1,63,28,89,62,1,55,92,55,29,88,18,-1,60,21,19,1,92,90,-1,-1,8,-1,1,-1,1,0,88,118,94,252,13,27,60,27,20,58,43,,,,,,SC,,,8.0
+2022-12-31,County,SC South Carolina,SC Pickens County 45077,9,Housing Choice Vouchers,3,,Pickens County,45077,268,92,244,99,6,6,1.6,393,341,490,14276,8863,4,6,49,26,16,11,0,84,23,99,78,1,18,86,18,65,60,42,-1,27,22,51,3,38,35,0,-1,62,0,2,-1,2,0,14,104,99,120,27,53,20,47,6,9,42,,,,,,SC,,,62.0
+2022-12-31,County,SC South Carolina,SC Richland County 45079,9,Housing Choice Vouchers,3,,Richland County,45079,4519,84,3896,100,8,9,2.4,9302,347,720,13892,5818,13,15,30,12,31,35,1,49,22,93,73,1,51,86,50,20,52,13,1,60,20,19,0,95,94,0,0,5,0,0,0,1,0,28,108,100,182,15,37,48,32,24,68,47,,,,,,SC,,,5.0
+2022-12-31,County,SC South Carolina,SC Saluda County 45081,9,Housing Choice Vouchers,3,,Saluda County,45081,127,92,115,99,5,10,1.9,214,338,497,14419,7748,5,12,40,23,20,26,1,69,23,97,75,-1,37,85,37,41,41,23,2,42,21,36,3,85,85,-1,-1,15,-1,-1,-1,0,1,11,84,100,150,14,36,50,56,16,47,53,,,,,,SC,,,15.0
+2022-12-31,County,SC South Carolina,SC Spartanburg County 45083,9,Housing Choice Vouchers,3,,Spartanburg County,45083,2660,80,2283,100,5,8,2.3,5138,359,570,14045,6241,17,12,37,13,21,26,1,72,24,94,73,2,46,89,47,31,79,23,3,52,19,26,2,84,81,0,0,16,1,1,0,2,1,37,86,94,175,23,39,39,27,20,50,60,,,,,,SC,,,16.0
+2022-12-31,County,SC South Carolina,SC Sumter County 45085,9,Housing Choice Vouchers,3,,Sumter County,45085,934,88,817,99,6,9,2.0,1637,307,503,13131,6554,10,11,49,16,15,20,1,75,28,93,66,1,38,81,35,47,53,26,2,44,24,31,1,91,90,0,0,9,0,0,-1,1,0,9,92,99,150,9,47,44,56,27,64,50,,,,,,SC,,,9.0
+2022-12-31,County,SC South Carolina,SC Union County 45087,9,Housing Choice Vouchers,3,,Union County,45087,274,54,143,97,7,12,2.6,371,305,489,11836,4562,31,13,31,8,17,27,1,72,24,90,72,1,63,97,64,24,80,14,1,69,19,10,1,81,81,-1,-1,19,-1,-1,-1,0,1,47,127,99,187,3,39,57,37,19,31,53,,,,,,SC,,,19.0
+2022-12-31,County,SC South Carolina,SC Williamsburg County 45089,9,Housing Choice Vouchers,3,,Williamsburg County,45089,90,69,61,98,5,3,2.6,156,363,535,12474,4878,16,16,38,9,21,30,2,61,26,89,70,-1,66,95,66,33,58,18,5,59,16,20,-1,100,100,-1,-1,-1,-1,-1,-1,0,0,24,105,100,184,3,36,61,39,28,75,42,,,,,,SC,,,0.0
+2022-12-31,County,SC South Carolina,SC York County 45091,9,Housing Choice Vouchers,3,,York County,45091,967,84,812,100,6,8,2.2,1757,456,647,17783,8218,7,11,31,18,34,33,1,63,24,94,73,1,40,89,41,26,42,17,1,44,15,40,2,79,75,-1,-1,21,0,3,-1,3,0,11,122,99,149,18,40,43,40,16,40,60,,,,,,SC,,,21.0
+2022-12-31,County,,45XXX,9,Housing Choice Vouchers,3,,Missing County,45XXX,125,83,110,100,5,1,2.6,285,14,715,12404,4787,10,25,32,11,21,35,1,52,-1,-1,-1,-1,64,93,63,24,76,14,1,67,16,15,1,93,92,-1,-1,7,1,-1,-1,1,1,-1,40,2,258,44,23,34,22,-1,-1,-1,,,,,,SC,,,7.0

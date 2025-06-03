@@ -1,17 +1,18 @@
-Name,Subsidized units available,% Minority,%White Non-Hispanic
-Piscataquis County,48,0,100
-Washington County,43,3,97
-Hancock County,447,3,97
-Somerset County,427,4,96
-Knox County,253,4,97
-York County,1589,5,95
-Oxford County,540,5,95
-Kennebec County,1299,5,95
-Aroostook County,867,5,95
-Waldo County,206,6,94
-Sagadahoc County,474,6,94
-Franklin County,135,6,94
-Penobscot County,1183,8,92
-Lincoln County,135,9,91
-Cumberland County,4504,16,84
-Androscoggin County,2223,19,81
+Quarter,gsl,states,entities,sumlevel,program_label,program,sub_program,Name,code,Subsidized units available,pct_occupied,number_reported,pct_reported,months_since_report,pct_movein,people_per_unit,people_total,rent_per_month,spending_per_month,hh_income,person_income,pct_lt5k,pct_5k_lt10k,pct_10k_lt15k,pct_15k_lt20k,pct_ge20k,pct_wage_major,pct_welfare_major,pct_other_major,pct_median,pct_lt50_median,pct_lt30_median,pct_2adults,pct_1adult,pct_female_head,pct_female_head_child,pct_disabled_lt62,pct_disabled_ge62,pct_disabled_all,pct_lt24_head,pct_age25_50,pct_age51_61,pct_age62plus,pct_age85plus,% Minority,pct_black_nonhsp,pct_native_american_nonhsp,pct_asian_pacific_nonhsp,pct_white_nothsp,pct_black_hsp,pct_wht_hsp,pct_oth_hsp,pct_hispanic,pct_multi,months_waiting,months_from_movein,pct_utility_allow,ave_util_allow,pct_bed1,pct_bed2,pct_bed3,pct_overhoused,tpoverty,tminority,tpct_ownsfd,fedhse,cbsa,place,latitude,longitude,state,pha_total_units,ha_size,%White Non-Hispanic
+2022-12-31,County,ME Maine,ME Androscoggin County 23001,9,Housing Choice Vouchers,3,,Androscoggin County,23001,2223,81,1849,100,5,15,2.2,4027,397,747,16274,7472,3,8,47,15,28,21,3,69,25,94,72,4,32,71,32,54,63,30,4,46,24,26,1,19,17,0,0,81,0,1,0,1,1,19,86,82,61,43,30,26,14,14,8,22,,,,,,ME,,,81.0
+2022-12-31,County,ME Maine,ME Aroostook County 23003,9,Housing Choice Vouchers,3,,Aroostook County,23003,867,72,716,100,5,16,1.6,1147,333,609,13020,8127,5,11,53,14,17,13,3,77,24,97,74,3,19,66,19,62,64,46,3,36,28,32,2,5,2,1,0,95,-1,2,0,2,1,17,94,57,95,50,33,17,22,18,6,64,,,,,,ME,,,95.0
+2022-12-31,County,ME Maine,ME Cumberland County 23005,9,Housing Choice Vouchers,3,,Cumberland County,23005,4504,82,3993,100,6,11,1.9,7447,433,1137,17450,9356,4,8,41,16,31,21,1,70,21,96,81,5,23,67,23,59,56,36,2,39,24,35,2,16,11,1,2,84,0,2,0,2,1,29,103,61,93,53,25,22,12,12,11,30,,,,,,ME,,,84.0
+2022-12-31,County,ME Maine,ME Franklin County 23007,9,Housing Choice Vouchers,3,,Franklin County,23007,135,78,107,100,6,9,2.1,222,343,807,13649,6579,3,12,52,10,23,12,2,79,24,98,73,11,26,79,31,61,87,40,1,52,18,29,-1,6,-1,2,-1,94,1,3,-1,4,1,27,120,71,121,34,30,36,23,3,1,29,,,,,,ME,,,94.0
+2022-12-31,County,ME Maine,ME Hancock County 23009,9,Housing Choice Vouchers,3,,Hancock County,23009,447,84,372,99,5,16,1.6,591,363,636,14632,9210,3,7,51,16,23,18,2,74,24,95,72,2,24,74,24,61,57,41,3,39,21,37,2,3,2,1,0,97,1,-1,-1,1,0,14,82,71,147,48,39,13,21,12,4,69,,,,,,ME,,,97.0
+2022-12-31,County,ME Maine,ME Kennebec County 23011,9,Housing Choice Vouchers,3,,Kennebec County,23011,1299,80,1132,100,5,8,1.6,1791,344,655,13588,8588,2,7,58,16,17,9,2,83,23,98,81,3,19,61,17,74,86,56,2,38,28,32,2,5,2,1,0,95,0,2,-1,2,1,41,107,70,71,56,31,13,18,18,6,37,,,,,,ME,,,95.0
+2022-12-31,County,ME Maine,ME Knox County 23013,9,Housing Choice Vouchers,3,,Knox County,23013,253,78,200,100,5,11,1.8,366,337,807,13337,7288,3,11,54,16,16,12,5,76,22,97,79,2,31,76,30,52,85,43,1,43,19,37,3,4,1,1,1,97,-1,1,-1,1,1,30,106,60,178,40,37,24,22,9,3,47,,,,,,ME,,,96.0
+2022-12-31,County,ME Maine,ME Lincoln County 23015,9,Housing Choice Vouchers,3,,Lincoln County,23015,135,78,107,100,6,11,1.8,197,353,807,14169,7696,5,12,45,13,24,14,6,73,23,94,75,3,34,79,32,59,83,45,-1,44,22,34,1,9,1,4,-1,91,-1,5,-1,5,2,9,109,75,136,25,50,25,30,14,3,75,,,,,,ME,,,91.0
+2022-12-31,County,ME Maine,ME Oxford County 23017,9,Housing Choice Vouchers,3,,Oxford County,23017,540,78,428,100,5,5,2.3,985,342,806,12516,5438,4,11,53,13,19,15,2,68,21,96,79,9,35,80,39,53,91,34,2,55,22,21,0,5,2,1,-1,95,-1,3,0,3,0,22,126,56,115,23,29,47,31,14,4,64,,,,,,ME,,,95.0
+2022-12-31,County,ME Maine,ME Penobscot County 23019,9,Housing Choice Vouchers,3,,Penobscot County,23019,1183,84,1024,100,5,10,1.5,1587,348,663,14293,9222,2,6,56,19,17,10,1,84,24,96,76,2,17,68,17,73,75,53,1,38,24,37,2,8,1,3,0,92,0,2,0,3,1,37,104,49,87,60,26,15,16,20,7,47,,,,,,ME,,,92.0
+2022-12-31,County,ME Maine,ME Piscataquis County 23021,9,Housing Choice Vouchers,3,,Piscataquis County,23021,48,78,38,100,5,5,2.2,82,393,807,14665,6796,3,-1,68,5,24,13,-1,84,25,97,79,11,26,76,29,75,90,49,5,45,24,26,-1,0,-1,-1,-1,100,-1,-1,-1,0,0,5,127,63,264,26,37,37,29,20,4,76,,,,,,ME,,,100.0
+2022-12-31,County,ME Maine,ME Sagadahoc County 23023,9,Housing Choice Vouchers,3,,Sagadahoc County,23023,474,78,405,100,5,8,1.7,690,395,858,16750,9831,3,9,44,13,32,19,0,75,25,95,70,3,24,70,21,64,59,42,1,39,21,38,3,6,2,1,0,94,0,1,0,1,1,21,84,63,87,54,32,14,12,12,5,60,,,,,,ME,,,94.0
+2022-12-31,County,ME Maine,ME Somerset County 23025,9,Housing Choice Vouchers,3,,Somerset County,23025,427,78,338,100,5,7,1.7,589,337,807,12533,7192,3,8,60,16,12,8,1,82,23,97,79,4,23,72,22,71,89,51,0,42,30,27,1,4,1,1,0,96,-1,1,-1,1,1,36,115,49,155,39,38,23,28,8,1,28,,,,,,ME,,,96.0
+2022-12-31,County,ME Maine,ME Waldo County 23027,9,Housing Choice Vouchers,3,,Waldo County,23027,206,79,163,100,4,23,1.7,285,331,803,13370,7647,4,13,49,16,18,12,1,80,24,96,76,2,25,72,23,58,77,45,2,31,28,39,1,6,1,2,1,94,-1,2,-1,2,2,13,91,84,111,45,31,24,25,14,4,65,,,,,,ME,,,94.0
+2022-12-31,County,ME Maine,ME Washington County 23029,9,Housing Choice Vouchers,3,,Washington County,23029,43,78,34,100,6,9,1.6,54,313,807,11367,7157,-1,10,69,3,17,9,-1,76,21,100,88,3,15,59,15,65,93,57,3,32,24,41,3,3,-1,-1,-1,97,-1,3,-1,3,0,27,151,79,262,35,44,21,38,18,6,76,,,,,,ME,,,97.0
+2022-12-31,County,ME Maine,ME York County 23031,9,Housing Choice Vouchers,3,,York County,23031,1589,82,1552,100,5,12,1.8,2787,401,939,16093,8962,3,9,43,17,28,15,3,75,22,97,77,3,25,71,25,59,69,40,1,39,25,35,3,5,3,1,1,95,0,1,0,1,1,27,106,67,94,47,33,20,17,4,2,20,,,,,,ME,,,95.0
+2022-12-31,County,,23XXX,9,Housing Choice Vouchers,3,,Missing County,23XXX,171,80,150,100,5,-1,1.8,272,-1,933,13491,7440,4,22,45,9,20,19,2,67,-1,-1,-1,2,26,71,27,61,86,42,5,45,31,19,1,8,1,1,3,92,1,2,-1,3,2,-1,14,-1,-1,71,6,3,3,-1,-1,-1,,,,,,ME,,,92.0

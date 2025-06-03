@@ -1,14 +1,15 @@
-Name,Subsidized units available,% Minority,%White Non-Hispanic
-Mohave County,555,0,0
-Yavapai County,197,15,85
-Coconino County,544,44,56
-Graham County,41,45,55
-Gila County,58,45,55
-Navajo County,119,53,47
-Cochise County,738,55,45
-Pima County,5660,64,36
-Pinal County,821,67,33
-Maricopa County,14459,68,32
-Apache County,16,77,23
-Yuma County,1848,85,15
-Santa Cruz County,195,95,5
+Quarter,gsl,states,entities,sumlevel,program_label,program,sub_program,Name,code,Subsidized units available,pct_occupied,number_reported,pct_reported,months_since_report,pct_movein,people_per_unit,people_total,rent_per_month,spending_per_month,hh_income,person_income,pct_lt5k,pct_5k_lt10k,pct_10k_lt15k,pct_15k_lt20k,pct_ge20k,pct_wage_major,pct_welfare_major,pct_other_major,pct_median,pct_lt50_median,pct_lt30_median,pct_2adults,pct_1adult,pct_female_head,pct_female_head_child,pct_disabled_lt62,pct_disabled_ge62,pct_disabled_all,pct_lt24_head,pct_age25_50,pct_age51_61,pct_age62plus,pct_age85plus,% Minority,pct_black_nonhsp,pct_native_american_nonhsp,pct_asian_pacific_nonhsp,pct_white_nothsp,pct_black_hsp,pct_wht_hsp,pct_oth_hsp,pct_hispanic,pct_multi,months_waiting,months_from_movein,pct_utility_allow,ave_util_allow,pct_bed1,pct_bed2,pct_bed3,pct_overhoused,tpoverty,tminority,tpct_ownsfd,fedhse,cbsa,place,latitude,longitude,state,pha_total_units,ha_size,%White Non-Hispanic
+2022-12-31,County,AZ Arizona,AZ Apache County 04001,9,Housing Choice Vouchers,3,,Apache County,04001,16,71,13,100,6,8,2.6,34,411,710,19792,7568,8,-1,46,8,38,23,-1,77,43,77,54,-1,31,100,31,78,75,38,-1,15,54,31,8,77,-1,77,-1,23,-1,-1,-1,0,0,1,219,100,203,8,15,77,46,35,80,71,,,,,,AZ,,,23.0
+2022-12-31,County,AZ Arizona,AZ Cochise County 04003,9,Housing Choice Vouchers,3,,Cochise County,04003,738,90,687,100,5,15,1.7,1176,340,575,13515,7895,6,10,50,16,18,15,0,80,27,93,64,2,21,70,20,58,58,39,1,28,22,49,3,55,11,2,2,45,0,39,1,40,1,9,90,92,124,33,39,28,41,22,51,55,,,,,,AZ,,,45.0
+2022-12-31,County,AZ Arizona,AZ Coconino County 04005,9,Housing Choice Vouchers,3,,Coconino County,04005,544,82,490,100,5,15,1.9,912,400,1215,16571,8904,6,9,41,15,29,24,1,65,25,92,73,3,25,66,25,44,72,33,2,34,27,38,1,44,4,23,1,56,0,15,1,16,0,22,89,67,116,43,36,21,21,5,9,16,,,,,,AZ,,,56.0
+2022-12-31,County,AZ Arizona,AZ Gila County 04007,9,Housing Choice Vouchers,3,,Gila County,04007,58,95,73,100,5,26,1.6,117,323,754,12754,7957,4,13,58,15,10,10,1,86,28,96,63,-1,21,79,21,55,83,47,1,19,22,58,1,45,1,5,-1,55,-1,38,-1,38,1,16,68,64,158,52,27,21,22,18,32,66,,,,,,AZ,,,55.0
+2022-12-31,County,AZ Arizona,AZ Graham County 04009,9,Housing Choice Vouchers,3,,Graham County,04009,41,94,40,100,6,48,1.7,66,301,618,12464,7554,-1,3,73,16,8,-1,-1,93,26,95,73,3,18,80,15,82,52,39,-1,25,18,58,5,45,-1,-1,-1,55,3,38,5,45,0,14,63,100,95,48,23,30,28,15,38,71,,,,,,AZ,,,55.0
+2022-12-31,County,AZ Arizona,AZ Maricopa County 04013,9,Housing Choice Vouchers,3,,Maricopa County,04013,14459,80,12882,100,5,10,2.5,31817,415,1197,15703,6358,9,12,37,13,30,26,1,62,21,94,77,4,37,76,38,37,76,25,1,46,23,29,1,68,40,2,1,32,2,22,1,24,1,19,115,81,180,38,29,33,14,20,50,41,,,,,,AZ,,,32.0
+2022-12-31,County,AZ Arizona,AZ Mohave County 04015,9,Housing Choice Vouchers,3,,Mohave County,04015,555,-5,505,-5,-5,-5,-5.0,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,,,,,,AZ,,,
+2022-12-31,County,AZ Arizona,AZ Navajo County 04017,9,Housing Choice Vouchers,3,,Navajo County,04017,119,71,99,100,6,24,2.2,213,332,710,13944,6481,13,11,43,16,15,19,3,76,31,88,60,3,35,82,36,52,57,32,2,32,30,35,1,53,9,24,-1,47,1,18,-1,19,3,15,85,81,154,28,42,29,30,16,39,49,,,,,,AZ,,,47.0
+2022-12-31,County,AZ Arizona,AZ Pima County 04019,9,Housing Choice Vouchers,3,,Pima County,04019,5660,84,5052,100,5,11,2.2,10953,326,762,12933,5965,14,11,42,12,21,23,1,65,21,95,78,4,31,69,31,36,80,27,1,46,23,30,1,64,16,2,1,36,1,41,2,45,0,22,105,76,164,51,25,23,10,24,50,39,,,,,,AZ,,,36.0
+2022-12-31,County,AZ Arizona,AZ Pinal County 04021,9,Housing Choice Vouchers,3,,Pinal County,04021,821,72,655,100,6,12,2.8,1812,420,1033,16845,6089,12,11,32,14,31,29,2,63,22,93,73,5,47,83,49,31,60,18,2,48,21,29,1,67,37,2,1,33,1,24,2,27,1,20,96,95,177,19,32,49,27,15,39,44,,,,,,AZ,,,33.0
+2022-12-31,County,AZ Arizona,AZ Santa Cruz County 04023,9,Housing Choice Vouchers,3,,Santa Cruz County,04023,195,86,165,99,12,7,1.7,283,284,436,11136,6493,11,31,36,12,10,14,-1,81,27,95,65,5,16,82,20,17,14,9,1,18,13,68,8,95,-1,-1,-1,5,-1,95,-1,95,0,17,143,99,118,46,33,21,26,27,83,49,,,,,,AZ,,,5.0
+2022-12-31,County,AZ Arizona,AZ Yavapai County 04025,9,Housing Choice Vouchers,3,,Yavapai County,04025,197,77,176,100,5,13,1.3,225,353,774,14160,11076,3,9,56,16,16,17,-1,79,28,96,66,1,8,49,6,58,83,59,-1,14,24,62,2,15,5,2,1,85,-1,7,-1,7,1,2,103,64,128,50,41,9,38,4,6,17,,,,,,AZ,,,85.0
+2022-12-31,County,AZ Arizona,AZ Yuma County 04027,9,Housing Choice Vouchers,3,,Yuma County,04027,1848,97,1808,100,5,8,2.6,4674,373,652,14593,5645,14,13,34,14,25,34,1,61,30,85,58,7,43,81,45,20,56,15,2,48,17,32,2,85,5,1,0,15,1,76,1,78,0,20,83,94,119,32,29,38,13,23,58,41,,,,,,AZ,,,15.0
+2022-12-31,County,,04XXX,9,Housing Choice Vouchers,3,,Missing County,04XXX,471,81,420,100,5,0,2.4,999,1,979,13176,5539,15,13,36,11,26,22,1,60,-1,-1,-1,3,40,78,40,36,75,22,3,51,25,21,0,66,28,2,0,34,3,31,2,35,0,3,1,0,136,92,3,5,2,-1,-1,-1,,,,,,AZ,,,34.0

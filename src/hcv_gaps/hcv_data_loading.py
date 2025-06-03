@@ -223,100 +223,224 @@ def load_income_limits(filepath):
     logging.info("Income limits data loaded successfully and all checks passed.")
     return income_limits_df
 
+from pandas.api import types as pd_types
+import logging
+
 def load_incarceration_df(filepath=None):
     """
-    Load incarceration data from a CSV file and validate its structure.
+    Load incarceration data from a CSV file, coercing County_Name to string
+    and validating its contents.
 
-    Parameters:
-    filepath (str or None): Path to the incarceration CSV file. If None, function exits gracefully.
+    Parameters
+    ----------
+    filepath : str or None
+        Path to the incarceration CSV file. If None, returns None.
 
-    Returns:
-    pd.DataFrame or None: Loaded and validated incarceration data, or None if no file is provided.
+    Returns
+    -------
+    pd.DataFrame or None
+        A DataFrame with exactly these columns:
+          - State
+          - County_Name         (dtype: string, never literal "0")
+          - Ttl_Incarc          (int)
+          - Ttl_Minority_Incarc (int)
+          - Ttl_White_Incarc    (int)
+
+    Raises
+    ------
+    ValueError
+        If the file is missing required columns, or if County_Name
+        is not textual or contains the sentinel "0".
     """
     if filepath is None:
         logging.info("No incarceration data provided.")
         return None
 
+    # Only load the columns we need, force County_Name to pandas StringDtype
+    needed_cols = [
+        "State",
+        "County_Name",
+        "Ttl_Incarc",
+        "Ttl_Minority_Incarc",
+        "Ttl_White_Incarc",
+    ]
+
     try:
-        incarceration_df = pd.read_csv(filepath)
+        df = pd.read_csv(
+            filepath,
+            usecols=needed_cols,
+            dtype={"County_Name": "string"},
+            low_memory=False,
+        )
     except Exception as e:
-        logging.info(f"Error loading file: {e}")
-        return None
+        raise ValueError(f"Failed to read incarceration CSV at {filepath!r}: {e}")
 
-    required_columns = ['County_Name', 'Ttl_Incarc']
-    race_columns = ['Ttl_Minority_Incarc', 'Ttl_White_Incarc']
+    # Check that all needed columns are present
+    missing = [c for c in needed_cols if c not in df.columns]
+    if missing:
+        raise ValueError(f"Incarceration data missing columns: {missing!r}")
 
-    # Check for required columns
-    missing_required_columns = [col for col in required_columns if col not in incarceration_df.columns]
-    if missing_required_columns:
-        logging.info(f"Missing required columns: {', '.join(missing_required_columns)}. Please ensure the file has these columns.")
-        return None
+    # Ensure County_Name is truly a string dtype
+    if not pd_types.is_string_dtype(df["County_Name"]):
+        raise ValueError(
+            f"'County_Name' must be text, but got dtype {df['County_Name'].dtype}"
+        )
 
-    missing_race_columns = [col for col in race_columns if col not in incarceration_df.columns]
-    if missing_race_columns:
-        logging.info(f"Attention: Missing columns {', '.join(missing_race_columns)}. Race sampling will not be available.")
+    # Guard against the “all zeros” bug: if any entry is exactly "0", it's almost certainly wrong
+    zero_mask = df["County_Name"] == "0"
+    if zero_mask.any():
+        bad_idxs = df.index[zero_mask][:5].tolist()
+        raise ValueError(
+            f"Found literal '0' in County_Name at rows {bad_idxs}; "
+            "please verify the CSV path and contents."
+        )
 
-    # Convert numeric columns, handling errors and missing values
-    for col in required_columns + race_columns:
-        if col in incarceration_df.columns:
-            incarceration_df[col] = pd.to_numeric(incarceration_df[col], errors='coerce').fillna(0).astype(int)
+    logging.info(
+        "Loaded incarceration data from %r (%d rows)",
+        filepath,
+        len(df)
+    )
+    return df
 
-    logging.info("Incarceration data loaded successfully.")
-    return incarceration_df
+import os
+import numpy as np
+import logging
 
-def load_hud_hcv_data(filepath):
+
+def load_hud_hcv_data(config: dict) -> pd.DataFrame:
     """
-    Load and validate HUD Picture of Subsidized Housing data from a CSV file.
-
-    Parameters:
-    ----------
-    filepath : str
-        Path to the HUD HCV data CSV file.
-
-    Returns:
-    -------
-    pd.DataFrame
-        Loaded and validated HUD HCV data.
-
-    Raises:
-    -------
-    ValueError: If the file is missing required columns, contains missing values, or has invalid data types.
-
-    Notes:
-    ------
-    - Required columns: 'Name', 'Subsidized units available', '% Minority', '%White Non-Hispanic'
+    Load HUD HCV data, clean negative codes/"NA" → NaN, drop "Missing County",
+    and—if config['verbose'] is True—write a text report and CSV summary in config['output_directory'].
     """
+    # Extract configuration
+    filepath = config['hud_hcv_data_path']
+    state = config['state']
+    year = config['year']
+    verbose = config.get('verbose', False)
+    output_dir = config['output_directory']
+
     try:
-        # Load the dataset
-        hud_hcv_df = pd.read_csv(filepath)
+        raw_df = pd.read_csv(filepath, dtype=str)[
+            ['Name', 'Subsidized units available', '% Minority', '%White Non-Hispanic']
+        ].copy()
     except Exception as e:
         raise ValueError(f"Error loading HUD HCV data from {filepath}: {e}")
 
-    # Define required columns
-    required_columns = ['Name', 'Subsidized units available', '% Minority', '%White Non-Hispanic']
+    if verbose:
+        os.makedirs(output_dir, exist_ok=True)
 
-    # Check for required columns
-    missing_columns = [col for col in required_columns if col not in hud_hcv_df.columns]
-    if missing_columns:
-        raise ValueError(f"HUD HCV data is missing required columns: {', '.join(missing_columns)}. Ensure the file includes these columns.")
+    missing_county_info = []
+    neg_code_info = []
+    cleaned_rows = []
+    code_mapping = {
+        "NA": "Not applicable",
+        "-1": "Missing",
+        "-4": "Suppressed ( < 11 families )",
+        "-5": "Non-reporting ( < 50% reported )",
+    }
 
-    # Check for missing values in required columns
-    for col in required_columns:
-        missing_values = hud_hcv_df[col].isnull().sum()
-        if missing_values > 0:
-            raise ValueError(f"HUD HCV data contains {missing_values} missing values in the '{col}' column. Please address these issues.")
+    for _, row in raw_df.iterrows():
+        county = row['Name'].strip()
+        sub_str = (row['Subsidized units available'] or "").strip()
+        min_str = (row['% Minority'] or "").strip()
+        wht_str = (row['%White Non-Hispanic'] or "").strip()
 
-    # Validate numerical columns
-    try:
-        hud_hcv_df['Subsidized units available'] = pd.to_numeric(hud_hcv_df['Subsidized units available'], errors='coerce')
-        hud_hcv_df['% Minority'] = pd.to_numeric(hud_hcv_df['% Minority'], errors='coerce')
-        hud_hcv_df['%White Non-Hispanic'] = pd.to_numeric(hud_hcv_df['%White Non-Hispanic'], errors='coerce')
+        if county == "Missing County":
+            missing_county_info.append((county, sub_str, min_str, wht_str))
+            continue
 
-        # Check for any resulting NaN values after conversion
-        if hud_hcv_df[['Subsidized units available', '% Minority', '%White Non-Hispanic']].isnull().any().any():
-            raise ValueError("HUD HCV data contains invalid values in numerical columns ('Subsidized units available', '% Minority', '%White Non-Hispanic').")
-    except ValueError as e:
-        raise ValueError(f"Error validating numerical data types in HUD HCV dataset: {e}")
+        cleaned_vals = {}
+        for col in ['Subsidized units available', '% Minority', '%White Non-Hispanic']:
+            raw_val = (row[col] or "").strip()
+            if raw_val in code_mapping:
+                neg_code_info.append((county, col, raw_val, code_mapping[raw_val]))
+                cleaned_vals[col] = np.nan
+            else:
+                try:
+                    cleaned_vals[col] = float(raw_val.replace(",", "")) if raw_val else np.nan
+                except:
+                    raise ValueError(
+                        f"Invalid value '{raw_val}' in '{col}' for '{county}'."
+                    )
 
-    logging.info("HUD HCV data loaded successfully and all checks passed.")
-    return hud_hcv_df
+        cleaned_rows.append({
+            'Name': county,
+            'Subsidized units available': cleaned_vals['Subsidized units available'],
+            '% Minority': cleaned_vals['% Minority'],
+            '%White Non-Hispanic': cleaned_vals['%White Non-Hispanic']
+        })
+
+    hud_cleaned_df = pd.DataFrame(cleaned_rows, columns=[
+        'Name', 'Subsidized units available', '% Minority', '%White Non-Hispanic'
+    ])
+
+    if verbose:
+        txt_path = os.path.join(output_dir, f"{state}_{year}_hud_hcv_report.txt")
+        lines = [f"{state} {year}", ""]
+
+        if missing_county_info:
+            total_missing = 0.0
+            for _, sub_str, _, _ in missing_county_info:
+                try:
+                    total_missing += float(sub_str.replace(",", ""))
+                except:
+                    pass
+            lines.append(
+                f'There was "Missing County" data for {state} in {year}, '
+                f'totaling {int(total_missing)} Subsidized Units.'
+            )
+            lines.append("")
+
+        if neg_code_info:
+            unique_counties = {entry[0] for entry in neg_code_info}
+            count = len(unique_counties)
+            lines.append(
+                f"{count} county{'ies' if count > 1 else 'y'} had incomplete reporting:"
+            )
+            lines.append("")
+            for county, col, code_str, explanation in neg_code_info:
+                var_desc = {
+                    'Subsidized units available': "Subsidized Units Available",
+                    '% Minority': "% Minority",
+                    '%White Non-Hispanic': "% White Non-Hispanic"
+                }[col]
+                lines.append(
+                    f"{county} {state} {year}: ({code_str}) → {explanation} for '{var_desc}'."
+                )
+            lines.append("")
+
+        if not missing_county_info and not neg_code_info:
+            lines.append("No missing‐county rows and no negative codes found.")
+            lines.append("")
+
+        with open(txt_path, "w", encoding="utf-8") as f:
+            for line in lines:
+                f.write(line + "\n")
+        logging.info(f"Wrote HUD HCV report to: {txt_path}")
+
+        problem_counties = {
+            entry[0] for entry in neg_code_info
+        }.union({entry[0] for entry in missing_county_info})
+
+        summary_rows = []
+        for county in sorted(problem_counties):
+            raw_match = raw_df.loc[raw_df['Name'] == county].iloc[0]
+            summary_rows.append({
+                'Year': year,
+                'State': state,
+                'County': county,
+                'Subsidized units available': raw_match['Subsidized units available'],
+                '% Minority': raw_match['% Minority'],
+                '%White Non-Hispanic': raw_match['%White Non-Hispanic']
+            })
+
+        summary_df = pd.DataFrame(summary_rows, columns=[
+            'Year', 'State', 'County',
+            'Subsidized units available', '% Minority', '%White Non-Hispanic'
+        ])
+        csv_path = os.path.join(output_dir, f"{state}_{year}_hud_hcv_summary.csv")
+        summary_df.to_csv(csv_path, index=False)
+        logging.info(f"Wrote HUD HCV summary CSV to: {csv_path}")
+
+    logging.info("Finished loading & cleaning HUD HCV data.")
+    return hud_cleaned_df

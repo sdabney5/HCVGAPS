@@ -1,34 +1,35 @@
-Name,Subsidized units available,% Minority,%White Non-Hispanic
-McKinley County,64,0,0
-Union County,11,0,0
-Hidalgo County,10,0,0
-Harding County,2,0,0
-Guadalupe County,11,0,0
-DeBaca County,9,0,0
-Colfax County,3,0,0
-Catron County,8,0,0
-Torrance County,53,33,67
-Sierra County,190,33,67
-Los Alamos County,90,38,62
-Lincoln County,98,38,62
-Taos County,443,48,52
-Grant County,493,52,48
-San Juan County,385,55,45
-Eddy County,111,58,42
-Luna County,396,59,41
-Roosevelt County,139,64,36
-Otero County,282,65,35
-Valencia County,439,70,30
-Santa Fe County,1140,70,30
-Quay County,87,70,30
-Cibola County,112,73,27
-Lea County,186,74,26
-Bernalillo County,6621,74,26
-Socorro County,142,76,24
-Dona Ana County,1656,78,22
-Chaves County,1095,78,22
-Sandoval County,296,79,21
-Curry County,641,79,21
-San Miguel County,181,89,11
-Rio Arriba County,71,94,6
-Mora County,20,94,6
+Quarter,gsl,states,entities,sumlevel,program_label,program,sub_program,Name,code,Subsidized units available,pct_occupied,number_reported,pct_reported,months_since_report,pct_movein,people_per_unit,people_total,rent_per_month,spending_per_month,hh_income,person_income,pct_lt5k,pct_5k_lt10k,pct_10k_lt15k,pct_15k_lt20k,pct_ge20k,pct_wage_major,pct_welfare_major,pct_other_major,pct_median,pct_lt50_median,pct_lt30_median,pct_2adults,pct_1adult,pct_female_head,pct_female_head_child,pct_disabled_lt62,pct_disabled_ge62,pct_disabled_all,pct_lt24_head,pct_age25_50,pct_age51_61,pct_age62plus,pct_age85plus,% Minority,pct_black_nonhsp,pct_native_american_nonhsp,pct_asian_pacific_nonhsp,pct_white_nothsp,pct_black_hsp,pct_wht_hsp,pct_oth_hsp,pct_hispanic,pct_multi,months_waiting,months_from_movein,pct_utility_allow,ave_util_allow,pct_bed1,pct_bed2,pct_bed3,pct_overhoused,tpoverty,tminority,tpct_ownsfd,fedhse,cbsa,place,latitude,longitude,state,pha_total_units,ha_size,%White Non-Hispanic
+2022-12-31,County,NM New Mexico,NM Bernalillo County 35001,9,Housing Choice Vouchers,3,,Bernalillo County,35001,6621,77,5405,100,6,8,2.0,10627,342,680,13911,7075,7,10,51,14,19,19,2,74,24,96,75,3,28,70,27,56,81,39,1,39,25,35,2,74,7,5,2,26,1,58,1,60,0,28,116,71,107,42,32,27,20,16,45,37,,,,,,NM,,,26.0
+2022-12-31,County,NM New Mexico,NM Catron County 35003,9,Housing Choice Vouchers,3,,Catron County,35003,8,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,NM,,,
+2022-12-31,County,NM New Mexico,NM Chaves County 35005,9,Housing Choice Vouchers,3,,Chaves County,35005,1095,52,590,100,7,8,2.5,1461,325,615,12659,5112,13,19,39,9,20,27,6,60,26,91,70,4,48,80,48,33,84,21,5,53,20,22,1,78,6,1,0,22,1,69,1,71,1,7,81,84,159,17,34,49,29,19,53,65,,,,,,NM,,,22.0
+2022-12-31,County,NM New Mexico,NM Cibola County 35006,9,Housing Choice Vouchers,3,,Cibola County,35006,112,66,75,100,4,31,2.5,190,329,548,14114,5571,3,21,39,22,15,33,8,55,27,93,65,3,45,73,39,17,19,8,1,57,13,28,-1,73,5,17,-1,27,1,49,-1,51,5,3,37,100,144,24,33,43,28,19,55,55,,,,,,NM,,,27.0
+2022-12-31,County,NM New Mexico,NM Colfax County 35007,9,Housing Choice Vouchers,3,,Colfax County,35007,3,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,NM,,,
+2022-12-31,County,NM New Mexico,NM Curry County 35009,9,Housing Choice Vouchers,3,,Curry County,35009,641,67,438,100,5,18,2.2,953,323,527,12852,5907,11,18,41,12,17,32,13,53,26,93,69,4,42,81,43,31,81,21,7,50,22,21,0,79,21,0,0,21,2,55,-1,58,1,42,67,90,94,19,35,46,40,20,44,48,,,,,,NM,,,21.0
+2022-12-31,County,NM New Mexico,NM De Baca County 35011,9,Housing Choice Vouchers,3,,DeBaca County,35011,9,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,NM,,,
+2022-12-31,County,NM New Mexico,NM DoÃ±a Ana County 35013,9,Housing Choice Vouchers,3,,Dona Ana County,35013,1656,71,1149,98,5,10,2.3,2606,302,562,12000,5291,10,14,45,15,16,26,4,60,24,95,72,4,38,75,39,34,63,22,2,47,22,29,1,78,6,0,0,22,0,72,-1,72,0,12,100,92,124,34,35,32,20,17,40,33,,,,,,NM,,,22.0
+2022-12-31,County,NM New Mexico,NM Eddy County 35015,9,Housing Choice Vouchers,3,,Eddy County,35015,111,52,60,100,7,12,1.5,92,305,615,12546,8182,3,33,45,7,12,8,5,87,21,98,83,-1,20,75,20,73,81,54,-1,27,28,45,7,58,5,2,-1,42,-1,50,2,52,2,3,103,73,103,48,40,12,25,15,39,66,,,,,,NM,,,42.0
+2022-12-31,County,NM New Mexico,NM Grant County 35017,9,Housing Choice Vouchers,3,,Grant County,35017,493,75,362,99,6,20,1.8,650,291,462,11364,6329,17,13,46,14,10,19,5,73,25,96,70,4,28,71,28,35,71,28,2,39,24,35,1,52,1,1,-1,48,0,49,0,50,1,8,67,79,88,51,27,22,16,12,31,35,,,,,,NM,,,48.0
+2022-12-31,County,NM New Mexico,NM Guadalupe County 35019,9,Housing Choice Vouchers,3,,Guadalupe County,35019,11,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,NM,,,
+2022-12-31,County,NM New Mexico,NM Harding County 35021,9,Housing Choice Vouchers,3,,Harding County,35021,2,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,NM,,,
+2022-12-31,County,NM New Mexico,NM Hidalgo County 35023,9,Housing Choice Vouchers,3,,Hidalgo County,35023,10,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,NM,,,
+2022-12-31,County,NM New Mexico,NM Lea County 35025,9,Housing Choice Vouchers,3,,Lea County,35025,186,52,100,100,7,11,1.9,187,310,615,12117,6479,11,20,44,12,14,21,4,69,23,94,82,5,30,82,32,40,88,34,3,41,24,32,-1,74,25,-1,-1,26,4,45,-1,49,0,6,68,93,92,39,39,22,23,23,67,57,,,,,,NM,,,26.0
+2022-12-31,County,NM New Mexico,NM Lincoln County 35027,9,Housing Choice Vouchers,3,,Lincoln County,35027,98,52,53,100,8,8,1.5,77,340,615,13524,9309,2,17,48,19,13,8,-1,91,29,98,60,-1,17,79,17,61,77,55,-1,23,11,66,6,38,2,-1,-1,62,-1,32,4,36,6,6,91,94,145,38,55,8,40,2,5,9,,,,,,NM,,,62.0
+2022-12-31,County,NM New Mexico,NM Los Alamos County 35028,9,Housing Choice Vouchers,3,,Los Alamos County,35028,90,77,74,100,4,22,1.5,114,451,812,17827,11572,6,6,38,23,28,32,1,62,17,100,81,-1,26,66,24,38,62,32,1,36,23,39,3,38,1,3,4,62,-1,28,1,30,3,5,84,58,84,50,36,14,24,8,30,48,,,,,,NM,,,62.0
+2022-12-31,County,NM New Mexico,NM Luna County 35029,9,Housing Choice Vouchers,3,,Luna County,35029,396,75,291,99,5,39,2.3,661,273,462,11325,4986,15,19,43,11,12,21,11,66,24,97,74,15,28,68,32,28,49,16,5,40,22,32,1,59,2,0,0,41,-1,56,-1,56,1,5,55,90,85,42,31,27,13,27,60,51,,,,,,NM,,,41.0
+2022-12-31,County,NM New Mexico,NM McKinley County 35031,9,Housing Choice Vouchers,3,,McKinley County,35031,64,-5,23,-5,-5,-5,-5.0,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,,,,,,NM,,,
+2022-12-31,County,NM New Mexico,NM Mora County 35033,9,Housing Choice Vouchers,3,,Mora County,35033,20,76,16,100,5,6,1.7,27,330,788,12725,7541,6,-1,69,19,6,6,-1,94,27,100,75,-1,19,75,19,75,100,59,-1,25,50,25,-1,94,-1,-1,-1,6,-1,94,-1,94,0,32,121,100,169,6,38,56,69,0,0,0,,,,,,NM,,,6.0
+2022-12-31,County,NM New Mexico,NM Otero County 35035,9,Housing Choice Vouchers,3,,Otero County,35035,282,52,152,100,7,9,2.1,313,321,614,11397,5535,11,11,56,11,11,18,1,73,24,97,71,3,32,81,34,38,82,29,1,41,21,36,3,65,18,4,1,35,2,39,2,43,1,5,92,95,181,14,44,41,48,16,34,50,,,,,,NM,,,35.0
+2022-12-31,County,NM New Mexico,NM Quay County 35037,9,Housing Choice Vouchers,3,,Quay County,35037,87,52,47,100,8,-1,2.0,96,366,615,14880,7285,-1,19,43,15,23,28,2,70,32,89,60,4,40,85,40,54,67,31,-1,47,28,26,2,70,4,2,-1,30,-1,62,2,64,4,28,120,94,197,11,38,51,47,25,58,72,,,,,,NM,,,30.0
+2022-12-31,County,NM New Mexico,NM Rio Arriba County 35039,9,Housing Choice Vouchers,3,,Rio Arriba County,35039,71,67,51,100,6,16,1.6,80,285,739,10437,6653,13,17,53,11,6,8,-1,84,24,96,76,4,18,61,20,66,81,48,-1,37,31,31,4,94,-1,2,-1,6,-1,90,2,92,2,15,108,69,101,33,39,27,45,22,72,46,,,,,,NM,,,6.0
+2022-12-31,County,NM New Mexico,NM Roosevelt County 35041,9,Housing Choice Vouchers,3,,Roosevelt County,35041,139,52,75,100,8,9,1.7,130,273,615,11360,6554,9,17,54,10,10,11,4,79,25,92,79,1,28,75,27,64,85,44,3,32,21,44,5,64,3,3,-1,36,1,55,3,59,4,5,126,60,178,39,31,31,35,28,45,64,,,,,,NM,,,36.0
+2022-12-31,County,NM New Mexico,NM Sandoval County 35043,9,Housing Choice Vouchers,3,,Sandoval County,35043,296,78,247,100,5,6,2.4,585,395,764,15774,6660,5,10,43,16,26,24,1,72,26,95,69,5,35,82,34,47,72,32,0,45,20,35,2,79,8,4,0,21,1,64,2,66,0,40,120,97,121,19,40,41,31,6,27,38,,,,,,NM,,,21.0
+2022-12-31,County,NM New Mexico,NM San Juan County 35045,9,Housing Choice Vouchers,3,,San Juan County,35045,385,63,252,100,5,21,1.8,444,371,464,14614,8295,5,9,48,20,18,23,3,74,30,94,56,2,29,72,28,54,74,36,3,44,20,33,2,55,2,32,1,45,-1,20,0,20,0,10,73,61,112,50,33,17,17,15,35,40,,,,,,NM,,,45.0
+2022-12-31,County,NM New Mexico,NM San Miguel County 35047,9,Housing Choice Vouchers,3,,San Miguel County,35047,181,71,129,100,7,5,2.0,252,289,457,11627,5952,6,17,54,9,14,17,3,71,25,96,74,2,34,74,32,42,87,36,6,41,22,30,2,89,5,1,-1,11,-1,82,1,83,2,67,75,84,121,19,35,46,44,31,81,49,,,,,,NM,,,11.0
+2022-12-31,County,NM New Mexico,NM Santa Fe County 35049,9,Housing Choice Vouchers,3,,Santa Fe County,35049,1140,78,954,100,5,8,1.7,1601,389,812,15185,9048,6,9,49,13,23,20,1,75,25,94,73,2,21,71,20,57,66,39,1,31,27,41,2,70,2,3,0,30,0,64,1,65,1,30,117,88,116,38,44,18,32,12,49,32,,,,,,NM,,,30.0
+2022-12-31,County,NM New Mexico,NM Sierra County 35051,9,Housing Choice Vouchers,3,,Sierra County,35051,190,84,174,100,5,20,1.9,326,357,461,12468,6655,13,13,44,13,17,25,3,66,26,93,68,6,28,68,26,35,53,23,2,41,26,30,1,33,4,1,2,67,-1,25,1,25,2,4,61,69,203,35,36,29,28,30,31,49,,,,,,NM,,,67.0
+2022-12-31,County,NM New Mexico,NM Socorro County 35053,9,Housing Choice Vouchers,3,,Socorro County,35053,142,64,96,100,5,27,2.1,198,283,738,10453,5068,8,16,55,11,9,24,3,61,22,97,80,4,39,74,38,45,74,26,5,56,19,20,-1,76,3,2,-1,24,1,70,-1,71,2,7,75,91,150,45,29,26,17,27,59,56,,,,,,NM,,,24.0
+2022-12-31,County,NM New Mexico,NM Taos County 35055,9,Housing Choice Vouchers,3,,Taos County,35055,443,66,296,100,6,8,1.6,461,272,550,10992,7058,9,10,60,16,5,11,3,77,25,97,74,2,22,70,22,45,56,34,0,29,24,47,2,48,1,2,-1,52,-1,45,0,45,0,10,118,77,81,46,36,19,31,1,3,3,,,,,,NM,,,52.0
+2022-12-31,County,NM New Mexico,NM Torrance County 35057,9,Housing Choice Vouchers,3,,Torrance County,35057,53,64,36,100,6,3,2.1,74,307,736,13100,6373,3,9,57,20,11,17,-1,81,23,97,81,3,31,67,28,52,100,35,-1,36,22,42,-1,33,3,-1,-1,67,-1,31,-1,31,0,80,146,81,141,22,36,42,36,13,22,29,,,,,,NM,,,67.0
+2022-12-31,County,NM New Mexico,NM Union County 35059,9,Housing Choice Vouchers,3,,Union County,35059,11,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,NM,,,
+2022-12-31,County,NM New Mexico,NM Valencia County 35061,9,Housing Choice Vouchers,3,,Valencia County,35061,439,64,297,100,4,18,2.2,668,359,738,14897,6623,6,10,47,15,22,30,2,64,24,96,73,3,40,82,39,43,72,26,3,48,20,29,2,70,1,0,-1,30,0,68,-1,69,1,7,76,96,114,22,44,34,31,14,50,54,,,,,,NM,,,30.0
+2022-12-31,County,,35XXX,9,Housing Choice Vouchers,3,,Missing County,35XXX,123,66,85,100,6,1,2.2,189,-1,641,12674,5700,8,25,44,13,11,24,5,66,-1,-1,-1,4,39,74,38,42,56,23,2,52,35,11,-1,72,12,1,-1,28,1,55,2,59,4,-1,28,-1,-1,72,-1,-1,-1,-1,-1,-1,,,,,,NM,,,28.0

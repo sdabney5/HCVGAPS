@@ -1,63 +1,64 @@
-Name,Subsidized units available,% Minority,%White Non-Hispanic
-Terrebonne Parish County,780,0,0
-Plaquemines Parish County,167,0,0
-Grant Parish County,110,0,0
-Catahoula Parish County,56,0,0
-Calcasieu Parish County,3072,0,0
-Pointe Coupee Parish County,53,0,0
-La Salle Parish County,4,0,0
-Cameron Parish County,2,0,0
-Caldwell Parish County,153,15,85
-Vernon Parish County,71,27,73
-Franklin Parish County,29,36,64
-West Carroll Parish County,73,40,60
-Allen Parish County,296,47,53
-Livingston Parish County,211,61,39
-Acadia Parish County,583,69,31
-Vermilion Parish County,127,72,28
-Sabine Parish County,112,76,24
-Lafourche Parish County,573,76,24
-Beauregard Parish County,45,76,24
-St. Mary Parish County,345,78,22
-St. Martin Parish County,399,78,22
-St. James Parish County,17,80,20
-Red River Parish County,51,82,18
-Avoyelles Parish County,142,83,18
-St. Tammany Parish County,853,84,16
-Webster Parish County,317,85,15
-St. Bernard Parish County,584,86,14
-Richland Parish County,49,86,14
-Lafayette Parish County,2024,86,14
-Concordia Parish County,74,86,14
-Rapides Parish County,2276,87,13
-Ouachita Parish County,2554,87,13
-Jefferson Davis Parish County,133,87,13
-Winn Parish County,95,88,12
-Jackson Parish County,22,89,11
-Evangeline Parish County,292,89,11
-De Soto Parish County,216,89,11
-Bossier Parish County,841,89,11
-Natchitoches Parish County,785,90,10
-Washington Parish County,512,91,9
-Tensas Parish County,150,91,9
-St. Landry Parish County,735,91,9
-Iberville Parish County,104,91,9
-Iberia Parish County,585,91,9
-Morehouse Parish County,188,92,8
-Tangipahoa Parish County,942,93,7
-St. Charles Parish County,360,94,6
-Jefferson Parish County,5949,94,6
-Lincoln Parish County,587,95,5
-Caddo Parish County,4341,95,5
-Assumption Parish County,112,95,5
-West Baton Rouge Parish County,223,96,4
-Union Parish County,157,96,4
-Ascension Parish County,209,96,4
-East Carroll Parish County,146,97,3
-East Baton Rouge Parish County,4722,97,3
-Claiborne Parish County,87,97,3
-St. John the Baptist Parish County,417,98,2
-Orleans Parish County,18751,98,2
-Bienville Parish County,84,98,2
-St. Helena Parish County,29,100,0
-Madison Parish County,145,100,0
+Quarter,gsl,states,entities,sumlevel,program_label,program,sub_program,Name,code,Subsidized units available,pct_occupied,number_reported,pct_reported,months_since_report,pct_movein,people_per_unit,people_total,rent_per_month,spending_per_month,hh_income,person_income,pct_lt5k,pct_5k_lt10k,pct_10k_lt15k,pct_15k_lt20k,pct_ge20k,pct_wage_major,pct_welfare_major,pct_other_major,pct_median,pct_lt50_median,pct_lt30_median,pct_2adults,pct_1adult,pct_female_head,pct_female_head_child,pct_disabled_lt62,pct_disabled_ge62,pct_disabled_all,pct_lt24_head,pct_age25_50,pct_age51_61,pct_age62plus,pct_age85plus,% Minority,pct_black_nonhsp,pct_native_american_nonhsp,pct_asian_pacific_nonhsp,pct_white_nothsp,pct_black_hsp,pct_wht_hsp,pct_oth_hsp,pct_hispanic,pct_multi,months_waiting,months_from_movein,pct_utility_allow,ave_util_allow,pct_bed1,pct_bed2,pct_bed3,pct_overhoused,tpoverty,tminority,tpct_ownsfd,fedhse,cbsa,place,latitude,longitude,state,pha_total_units,ha_size,%White Non-Hispanic
+2022-12-31,County,LA Louisiana,LA Acadia Parish 22001,9,Housing Choice Vouchers,3,,Acadia Parish,22001,583,92,510,95,5,22,2.3,1181,358,342,13172,5688,5,16,48,18,12,34,1,65,26,97,71,2,45,86,45,26,51,16,8,46,18,27,1,69,67,0,-1,31,1,1,0,2,0,6,71,99,132,23,38,39,34,12,11,26,,,,,,LA,,,31.0
+2022-12-31,County,LA Louisiana,LA Allen Parish 22003,9,Housing Choice Vouchers,3,,Allen Parish,22003,296,58,165,96,5,28,2.1,349,312,324,13419,6344,8,11,48,20,13,32,1,68,26,96,68,2,44,84,44,35,87,27,5,42,21,31,2,47,45,1,-1,53,-1,-1,-1,0,0,4,60,99,136,16,55,29,31,9,22,38,,,,,,LA,,,53.0
+2022-12-31,County,LA Louisiana,LA Ascension Parish 22005,9,Housing Choice Vouchers,3,,Ascension Parish,22005,209,79,183,100,6,10,2.7,486,352,756,15184,5717,13,19,28,7,32,31,-1,68,20,98,82,-1,58,92,56,31,86,24,5,61,15,20,1,96,96,-1,-1,4,-1,1,-1,1,0,7,102,98,109,14,39,46,26,9,19,23,,,,,,LA,,,4.0
+2022-12-31,County,LA Louisiana,LA Assumption Parish 22007,9,Housing Choice Vouchers,3,,Assumption Parish,22007,112,69,63,81,6,24,2.2,137,298,470,12636,5811,13,23,42,5,18,25,2,71,24,97,76,-1,51,90,51,31,78,23,5,48,19,29,2,95,95,-1,-1,5,-1,-1,-1,0,0,8,91,92,135,11,44,44,44,21,42,67,,,,,,LA,,,5.0
+2022-12-31,County,LA Louisiana,LA Avoyelles Parish 22009,9,Housing Choice Vouchers,3,,Avoyelles Parish,22009,142,83,120,100,5,13,2.6,316,308,499,12029,4568,9,21,38,16,17,31,1,62,26,98,64,1,63,93,61,22,64,15,3,59,18,21,1,83,81,-1,-1,18,2,-1,-1,2,3,27,77,100,135,8,19,73,41,5,11,22,,,,,,LA,,,17.0
+2022-12-31,County,LA Louisiana,LA Beauregard Parish 22011,9,Housing Choice Vouchers,3,,Beauregard Parish,22011,45,63,38,100,8,39,2.4,90,443,587,18642,7871,5,8,37,11,39,39,3,58,30,92,58,8,37,89,42,36,90,24,5,45,24,26,3,76,76,-1,-1,24,-1,-1,-1,0,0,23,51,100,144,18,34,47,34,18,32,70,,,,,,LA,,,24.0
+2022-12-31,County,LA Louisiana,LA Bienville Parish 22013,9,Housing Choice Vouchers,3,,Bienville Parish,22013,84,74,62,100,5,23,2.6,161,230,440,9939,3827,31,15,34,13,8,35,-1,65,22,97,81,2,71,97,71,11,100,11,10,73,10,8,-1,98,97,-1,-1,2,2,-1,-1,2,0,10,60,100,77,11,50,39,18,33,63,63,,,,,,LA,,,2.0
+2022-12-31,County,LA Louisiana,LA Bossier Parish 22015,9,Housing Choice Vouchers,3,,Bossier Parish,22015,841,92,796,100,5,17,2.2,1725,323,564,13268,6123,11,9,46,13,21,24,1,68,25,95,69,1,44,81,44,38,75,27,6,52,20,23,1,89,87,0,0,11,1,0,-1,2,0,7,78,88,136,29,41,30,27,32,53,59,,,,,,LA,,,11.0
+2022-12-31,County,LA Louisiana,LA Caddo Parish 22017,9,Housing Choice Vouchers,3,,Caddo Parish,22017,4341,60,2703,100,8,14,2.6,6906,336,587,12816,5016,13,21,33,13,20,27,0,65,24,94,71,1,54,87,54,31,86,23,4,61,17,18,1,95,94,0,0,5,0,0,0,1,0,16,95,96,148,14,32,54,34,29,59,48,,,,,,LA,,,5.0
+2022-12-31,County,LA Louisiana,LA Calcasieu Parish 22019,9,Housing Choice Vouchers,3,,Calcasieu Parish,22019,3072,-5,1460,-5,-5,-5,-5.0,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,,,,,,LA,,,
+2022-12-31,County,LA Louisiana,LA Caldwell Parish 22021,9,Housing Choice Vouchers,3,,Caldwell Parish,22021,153,71,145,100,5,21,1.9,275,294,570,12344,6508,7,18,46,17,11,26,-1,71,30,90,59,-1,38,81,39,50,53,28,4,47,27,22,3,15,15,-1,-1,85,-1,-1,-1,0,1,4,61,99,118,20,51,29,37,26,23,59,,,,,,LA,,,85.0
+2022-12-31,County,LA Louisiana,LA Cameron Parish 22023,9,Housing Choice Vouchers,3,,Cameron Parish,22023,2,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,LA,,,
+2022-12-31,County,LA Louisiana,LA Catahoula Parish 22025,9,Housing Choice Vouchers,3,,Catahoula Parish,22025,56,-5,30,-5,-5,-5,-5.0,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,,,,,,LA,,,
+2022-12-31,County,LA Louisiana,LA Claiborne Parish 22027,9,Housing Choice Vouchers,3,,Claiborne Parish,22027,87,81,78,100,5,29,2.6,204,254,482,10295,3936,29,19,31,12,9,28,-1,72,23,92,76,-1,63,92,63,19,80,15,3,59,19,19,-1,97,97,-1,-1,3,-1,-1,-1,0,0,12,65,100,109,4,15,81,41,49,65,74,,,,,,LA,,,3.0
+2022-12-31,County,LA Louisiana,LA Concordia Parish 22029,9,Housing Choice Vouchers,3,,Concordia Parish,22029,74,55,58,100,6,43,2.4,140,356,562,12110,5017,9,15,43,19,15,31,7,55,27,91,53,-1,53,93,53,13,31,11,9,47,22,22,-1,86,86,-1,-1,14,-1,-1,-1,0,0,24,56,100,137,22,17,60,21,10,11,23,,,,,,LA,,,14.0
+2022-12-31,County,LA Louisiana,LA De Soto Parish 22031,9,Housing Choice Vouchers,3,,De Soto Parish,22031,216,79,168,99,6,5,2.6,436,347,469,15420,5942,5,15,40,14,26,32,1,64,28,91,64,-1,59,94,58,28,73,17,4,57,15,24,1,89,88,-1,-1,11,-1,-1,1,1,1,25,103,100,139,23,26,51,29,30,66,57,,,,,,LA,,,11.0
+2022-12-31,County,LA Louisiana,LA East Baton Rouge Parish 22033,9,Housing Choice Vouchers,3,,East Baton Rouge Parish,22033,4722,83,4080,100,7,10,2.5,10397,351,805,12873,5052,12,20,35,10,23,24,1,65,18,97,85,1,48,88,48,32,76,20,2,57,20,21,0,97,92,0,0,3,4,0,-1,5,1,42,119,96,127,15,28,57,35,27,71,58,,,,,,LA,,,3.0
+2022-12-31,County,LA Louisiana,LA East Carroll Parish 22035,9,Housing Choice Vouchers,3,,East Carroll Parish,22035,146,80,112,96,6,22,3.2,361,347,476,15653,4856,8,25,24,10,33,46,1,54,32,85,56,1,79,92,76,14,27,11,3,67,17,13,-1,97,97,-1,-1,3,-1,-1,-1,0,2,8,119,100,139,2,22,76,19,52,87,63,,,,,,LA,,,3.0
+2022-12-31,County,LA Louisiana,LA Evangeline Parish 22039,9,Housing Choice Vouchers,3,,Evangeline Parish,22039,292,85,309,100,5,11,2.5,762,298,559,12561,5094,9,20,47,9,15,32,0,68,28,91,70,2,50,90,52,23,71,18,4,51,21,24,1,89,88,0,-1,11,1,-1,-1,1,0,16,89,99,126,7,38,55,46,32,48,65,,,,,,LA,,,11.0
+2022-12-31,County,LA Louisiana,LA Franklin Parish 22041,9,Housing Choice Vouchers,3,,Franklin Parish,22041,29,54,42,100,5,43,2.0,86,297,1111,11528,5630,17,15,49,7,12,40,-1,57,27,90,74,-1,57,98,57,35,40,17,14,55,19,12,-1,36,36,-1,-1,64,-1,-1,-1,0,5,2,48,100,143,12,36,52,45,38,53,71,,,,,,LA,,,64.0
+2022-12-31,County,LA Louisiana,LA Grant Parish 22043,9,Housing Choice Vouchers,3,,Grant Parish,22043,110,-5,49,-5,-5,-5,-5.0,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,,,,,,LA,,,
+2022-12-31,County,LA Louisiana,LA Iberia Parish 22045,9,Housing Choice Vouchers,3,,Iberia Parish,22045,585,72,405,96,7,12,2.7,1081,321,490,13758,5154,4,25,38,14,19,37,1,62,27,93,67,1,62,88,60,25,70,14,5,60,17,19,1,91,90,-1,-1,9,0,0,-1,0,0,15,90,100,145,15,39,47,24,14,30,32,,,,,,LA,,,9.0
+2022-12-31,County,LA Louisiana,LA Iberville Parish 22047,9,Housing Choice Vouchers,3,,Iberville Parish,22047,104,67,75,100,7,7,2.9,216,334,692,13781,4785,9,13,40,12,26,36,-1,55,25,93,68,-1,64,92,63,22,100,14,1,73,12,13,-1,91,89,1,-1,9,-1,-1,-1,0,0,23,119,99,109,12,35,53,24,15,44,54,,,,,,LA,,,9.0
+2022-12-31,County,LA Louisiana,LA Jackson Parish 22049,9,Housing Choice Vouchers,3,,Jackson Parish,22049,22,55,27,100,7,22,2.6,69,236,969,9769,3822,17,9,57,4,13,26,4,56,21,100,70,-1,48,93,48,19,67,17,11,52,15,22,-1,89,89,-1,-1,11,-1,-1,-1,0,0,2,104,100,93,11,22,67,37,36,53,78,,,,,,LA,,,11.0
+2022-12-31,County,LA Louisiana,LA Jefferson Parish 22051,9,Housing Choice Vouchers,3,,Jefferson Parish,22051,5949,76,4500,100,7,7,2.4,10869,415,757,15936,6598,8,19,32,12,28,34,0,64,25,93,70,1,49,88,48,27,81,22,2,58,19,22,1,94,92,0,0,6,1,1,0,2,0,39,117,97,174,15,39,46,35,19,56,51,,,,,,LA,,,6.0
+2022-12-31,County,LA Louisiana,LA Jefferson Davis Parish 22053,9,Housing Choice Vouchers,3,,Jefferson Davis Parish,22053,133,97,138,100,6,9,2.9,404,373,599,14384,4913,12,11,40,14,23,36,-1,64,26,95,64,1,66,92,64,31,94,17,3,54,19,25,1,87,86,-1,-1,13,1,-1,-1,1,0,35,106,100,159,13,31,56,20,22,27,69,,,,,,LA,,,13.0
+2022-12-31,County,LA Louisiana,LA Lafayette Parish 22055,9,Housing Choice Vouchers,3,,Lafayette Parish,22055,2024,75,1704,100,5,17,2.4,4163,298,651,12080,4944,18,15,39,11,16,27,1,70,19,98,83,1,48,84,47,31,67,19,3,57,20,20,0,86,85,0,0,14,1,0,0,1,1,15,92,99,91,19,44,38,30,21,45,47,,,,,,LA,,,14.0
+2022-12-31,County,LA Louisiana,LA Lafourche Parish 22057,9,Housing Choice Vouchers,3,,Lafourche Parish,22057,573,68,445,100,5,22,2.0,869,356,653,13917,7126,8,11,44,16,21,27,1,68,25,96,68,-1,42,81,41,42,73,31,6,43,22,29,1,76,73,1,0,24,1,1,-1,2,0,8,68,98,106,26,44,30,32,19,36,65,,,,,,LA,,,24.0
+2022-12-31,County,LA Louisiana,LA LaSalle Parish 22059,9,Housing Choice Vouchers,3,,La Salle Parish County,22059,4,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,LA,,,
+2022-12-31,County,LA Louisiana,LA Lincoln Parish 22061,9,Housing Choice Vouchers,3,,Lincoln Parish,22061,587,62,359,99,6,26,2.3,817,314,428,13338,5861,16,12,39,15,18,37,0,63,27,94,63,2,53,87,54,26,82,21,6,57,16,22,-1,95,95,-1,-1,5,-1,-1,-1,0,0,9,84,100,83,16,45,39,32,38,62,45,,,,,,LA,,,5.0
+2022-12-31,County,LA Louisiana,LA Livingston Parish 22063,9,Housing Choice Vouchers,3,,Livingston Parish,22063,211,57,115,96,6,18,1.9,221,332,554,13730,7145,2,15,47,18,18,18,3,76,20,100,85,-1,27,88,26,35,78,31,1,34,22,43,3,61,59,-1,-1,39,-1,2,-1,2,1,3,85,99,81,21,51,28,42,4,2,15,,,,,,LA,,,39.0
+2022-12-31,County,LA Louisiana,LA Madison Parish 22065,9,Housing Choice Vouchers,3,,Madison Parish,22065,145,58,88,100,5,11,2.8,250,397,442,15930,5607,7,11,34,20,27,59,-1,41,34,90,42,1,70,89,67,7,6,3,3,66,11,19,-1,100,100,-1,-1,-1,-1,-1,-1,0,0,73,96,100,175,9,19,72,26,49,80,74,,,,,,LA,,,0.0
+2022-12-31,County,LA Louisiana,LA Morehouse Parish 22067,9,Housing Choice Vouchers,3,,Morehouse Parish,22067,188,74,165,100,6,24,2.2,356,339,417,14304,6630,1,11,48,21,20,37,-1,60,33,90,47,-1,52,92,50,39,96,24,5,56,24,15,-1,92,92,-1,-1,8,-1,-1,-1,0,0,6,63,100,125,7,30,63,56,39,62,73,,,,,,LA,,,8.0
+2022-12-31,County,LA Louisiana,LA Natchitoches Parish 22069,9,Housing Choice Vouchers,3,,Natchitoches Parish,22069,785,70,439,80,5,18,1.8,799,325,294,13650,7500,0,21,53,10,15,31,0,69,32,90,58,1,36,81,35,35,75,26,10,43,20,27,0,90,84,0,-1,10,0,6,0,7,0,3,72,100,108,58,29,13,14,15,21,28,,,,,,LA,,,10.0
+2022-12-31,County,LA Louisiana,LA Orleans Parish 22071,9,Housing Choice Vouchers,3,,Orleans Parish,22071,18751,96,19022,100,6,9,2.3,43438,384,925,14021,6140,16,12,36,11,26,29,0,63,22,92,75,1,44,81,43,28,70,23,1,55,19,25,1,98,95,0,0,2,2,0,0,2,0,48,113,97,181,24,35,41,29,28,76,36,,,,,,LA,,,2.0
+2022-12-31,County,LA Louisiana,LA Ouachita Parish 22073,9,Housing Choice Vouchers,3,,Ouachita Parish,22073,2554,90,2249,98,5,15,2.2,4937,307,461,13086,5961,12,14,45,13,16,25,1,74,28,93,66,0,46,82,45,37,65,24,6,52,17,25,1,87,86,0,0,13,0,0,-1,0,0,12,84,100,112,16,47,37,38,33,56,55,,,,,,LA,,,13.0
+2022-12-31,County,LA Louisiana,LA Plaquemines Parish 22075,9,Housing Choice Vouchers,3,,Plaquemines Parish,22075,167,-5,74,-5,-5,-5,-5.0,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,,,,,,LA,,,
+2022-12-31,County,LA Louisiana,LA Pointe Coupee Parish 22077,9,Housing Choice Vouchers,3,,Pointe Coupee Parish,22077,53,-4,-4,-4,-4,-4,-4.0,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,-4,,,,,,LA,,,
+2022-12-31,County,LA Louisiana,LA Rapides Parish 22079,9,Housing Choice Vouchers,3,,Rapides Parish,22079,2276,72,1596,97,6,15,2.5,3998,298,513,12335,4924,19,16,36,13,16,29,1,70,23,95,73,1,56,84,56,30,81,21,8,57,15,21,0,87,85,0,0,13,1,1,0,1,0,18,68,97,97,20,32,49,23,26,55,55,,,,,,LA,,,13.0
+2022-12-31,County,LA Louisiana,LA Red River Parish 22081,9,Housing Choice Vouchers,3,,Red River Parish,22081,51,90,49,100,6,8,2.4,118,383,345,17094,7098,4,16,31,18,31,59,-1,41,37,76,39,-1,61,90,59,8,22,6,6,53,22,18,2,82,82,-1,-1,18,-1,-1,-1,0,0,192,90,96,124,8,47,45,33,31,61,67,,,,,,LA,,,18.0
+2022-12-31,County,LA Louisiana,LA Richland Parish 22083,9,Housing Choice Vouchers,3,,Richland Parish,22083,49,63,36,100,5,8,2.6,92,400,494,15419,6034,3,11,47,11,28,44,-1,56,34,83,56,3,53,94,56,19,50,13,-1,61,11,28,-1,86,86,-1,-1,14,-1,-1,-1,0,3,3,124,97,165,8,33,58,39,36,56,70,,,,,,LA,,,14.0
+2022-12-31,County,LA Louisiana,LA Sabine Parish 22085,9,Housing Choice Vouchers,3,,Sabine Parish,22085,112,74,80,96,6,-1,2.4,190,289,427,12717,5354,16,23,35,8,19,38,-1,63,27,90,69,-1,59,79,50,23,73,14,3,59,20,19,1,76,73,3,-1,24,-1,1,-1,1,0,-1,99,99,88,34,43,24,1,23,46,51,,,,,,LA,,,24.0
+2022-12-31,County,LA Louisiana,LA St. Bernard Parish 22087,9,Housing Choice Vouchers,3,,St. Bernard Parish,22087,584,84,622,100,8,2,2.3,1438,385,925,15641,6765,7,19,34,11,28,32,0,65,25,92,73,1,49,88,47,33,75,25,1,55,21,24,0,86,84,0,-1,14,0,1,0,1,0,51,132,99,131,7,44,49,45,27,44,62,,,,,,LA,,,14.0
+2022-12-31,County,LA Louisiana,LA St. Charles Parish 22089,9,Housing Choice Vouchers,3,,St. Charles Parish,22089,360,53,238,100,6,10,2.8,657,428,958,16985,6153,9,15,31,12,33,39,-1,60,26,95,66,1,62,93,61,22,75,16,1,66,20,13,1,94,93,-1,0,6,-1,-1,-1,0,0,10,97,99,168,5,34,61,32,12,42,76,,,,,,LA,,,6.0
+2022-12-31,County,LA Louisiana,LA St. Helena Parish 22091,9,Housing Choice Vouchers,3,,St. Helena Parish,22091,29,73,22,100,5,9,2.9,63,297,667,12105,4227,10,48,14,5,24,36,-1,59,16,100,82,-1,64,95,64,15,100,8,9,64,18,9,-1,100,100,-1,-1,-1,-1,-1,-1,0,0,7,47,100,170,5,9,86,41,2,9,13,,,,,,LA,,,0.0
+2022-12-31,County,LA Louisiana,LA St. James Parish 22093,9,Housing Choice Vouchers,3,,St. James Parish,22093,17,76,15,100,3,20,1.9,28,292,917,12401,6643,-1,20,60,7,13,13,-1,87,22,100,80,-1,27,60,27,83,100,46,-1,27,53,20,-1,80,80,-1,-1,20,-1,-1,-1,0,0,34,49,100,125,80,-1,20,-1,28,81,64,,,,,,LA,,,20.0
+2022-12-31,County,LA Louisiana,LA St. John the Baptist Parish 22095,9,Housing Choice Vouchers,3,,St. John the Baptist Parish,22095,417,53,250,100,9,18,3.0,754,482,1040,16819,5577,4,29,23,12,32,34,2,64,25,92,68,-1,62,95,61,21,74,13,1,69,16,14,0,98,93,-1,-1,2,4,-1,-1,4,0,28,99,100,200,2,23,75,32,18,68,82,,,,,,LA,,,2.0
+2022-12-31,County,LA Louisiana,LA St. Landry Parish 22097,9,Housing Choice Vouchers,3,,St. Landry Parish,22097,735,67,507,100,5,19,2.5,1279,343,440,14127,5600,1,19,48,14,19,34,13,53,31,89,58,1,51,89,51,26,84,20,6,57,15,23,1,91,90,-1,-1,9,0,1,0,1,1,8,80,100,153,22,39,39,23,5,9,18,,,,,,LA,,,9.0
+2022-12-31,County,LA Louisiana,LA St. Martin Parish 22099,9,Housing Choice Vouchers,3,,St. Martin Parish,22099,399,74,280,95,6,28,2.3,630,359,438,14255,6335,1,19,45,16,19,42,-1,58,23,99,79,0,49,89,49,9,25,6,5,54,19,21,1,78,78,-1,0,22,-1,-1,-1,0,0,4,66,98,128,11,43,46,43,5,13,23,,,,,,LA,,,22.0
+2022-12-31,County,LA Louisiana,LA St. Mary Parish 22101,9,Housing Choice Vouchers,3,,St. Mary Parish,22101,345,52,189,100,8,11,1.8,331,405,424,16938,9672,2,12,36,18,32,37,1,62,40,72,42,1,30,86,29,36,78,31,1,39,29,32,1,78,76,-1,-1,22,1,2,-1,2,0,6,134,99,145,29,51,20,33,21,41,71,,,,,,LA,,,22.0
+2022-12-31,County,LA Louisiana,LA St. Tammany Parish 22103,9,Housing Choice Vouchers,3,,St. Tammany Parish,22103,853,67,614,100,5,5,2.4,1469,398,732,16358,6837,7,13,40,13,27,33,1,66,25,92,70,1,46,86,45,25,77,20,1,55,18,27,1,84,84,0,-1,16,0,0,-1,0,1,16,118,98,107,26,36,38,21,12,18,40,,,,,,LA,,,16.0
+2022-12-31,County,LA Louisiana,LA Tangipahoa Parish 22105,9,Housing Choice Vouchers,3,,Tangipahoa Parish,22105,942,81,789,100,5,15,2.6,2086,325,621,13342,5047,6,21,43,12,18,29,1,69,24,96,75,1,54,88,53,27,84,19,3,56,17,24,0,93,92,0,-1,7,0,-1,-1,0,1,24,90,99,156,14,28,58,35,14,24,25,,,,,,LA,,,7.0
+2022-12-31,County,LA Louisiana,LA Tensas Parish 22107,9,Housing Choice Vouchers,3,,Tensas Parish,22107,150,61,94,100,5,23,2.3,214,314,443,11935,5242,12,24,39,16,9,44,-1,56,27,95,68,2,47,90,49,5,16,6,11,47,22,20,1,91,91,-1,-1,9,-1,-1,-1,0,0,8,61,100,182,4,38,57,51,39,58,85,,,,,,LA,,,9.0
+2022-12-31,County,LA Louisiana,LA Terrebonne Parish 22109,9,Housing Choice Vouchers,3,,Terrebonne Parish,22109,780,-5,467,-5,-5,-5,-5.0,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,,,,,,LA,,,
+2022-12-31,County,LA Louisiana,LA Union Parish 22111,9,Housing Choice Vouchers,3,,Union Parish,22111,157,73,137,100,12,6,2.5,341,268,495,11954,4803,22,26,22,15,15,34,15,47,25,91,72,1,54,88,54,25,81,16,8,69,11,12,-1,96,95,-1,-1,4,-1,1,-1,1,0,23,65,100,124,9,31,60,42,26,56,58,,,,,,LA,,,4.0
+2022-12-31,County,LA Louisiana,LA Vermilion Parish 22113,9,Housing Choice Vouchers,3,,Vermilion Parish,22113,127,75,107,100,5,14,2.4,260,317,660,12589,5181,7,10,63,6,14,28,2,70,22,98,82,-1,46,80,43,40,83,25,1,57,21,21,-1,72,70,-1,2,28,-1,-1,-1,0,1,8,107,99,86,23,31,46,31,12,22,36,,,,,,LA,,,28.0
+2022-12-31,County,LA Louisiana,LA Vernon Parish 22115,9,Housing Choice Vouchers,3,,Vernon Parish,22115,71,90,67,100,3,28,1.3,86,285,417,12139,9457,1,9,76,6,7,4,-1,96,25,100,82,-1,4,73,4,92,68,63,-1,24,30,46,1,27,21,-1,-1,73,-1,6,-1,6,0,6,63,100,146,64,21,15,25,6,6,23,,,,,,LA,,,73.0
+2022-12-31,County,LA Louisiana,LA Washington Parish 22117,9,Housing Choice Vouchers,3,,Washington Parish,22117,512,90,465,100,4,15,2.7,1253,250,659,9968,3699,38,12,28,7,15,22,1,75,22,91,74,1,65,88,64,18,81,14,14,60,10,16,0,91,89,-1,-1,9,1,-1,-1,1,0,20,56,100,110,16,30,54,18,26,21,72,,,,,,LA,,,9.0
+2022-12-31,County,LA Louisiana,LA Webster Parish 22119,9,Housing Choice Vouchers,3,,Webster Parish,22119,317,69,222,100,5,12,2.3,513,345,428,13243,5731,10,14,45,17,15,33,-1,67,30,90,61,1,50,92,50,31,69,20,4,55,18,23,1,85,85,-1,-1,15,-1,-1,-1,0,0,42,97,99,126,22,35,43,28,26,34,58,,,,,,LA,,,15.0
+2022-12-31,County,LA Louisiana,LA West Baton Rouge Parish 22121,9,Housing Choice Vouchers,3,,West Baton Rouge Parish,22121,223,64,145,100,6,8,2.6,372,325,630,14459,5636,12,16,38,13,22,37,-1,61,20,98,86,1,58,94,59,22,63,17,1,59,18,22,-1,96,95,1,-1,4,-1,-1,-1,0,0,17,105,99,114,14,33,53,31,14,49,55,,,,,,LA,,,4.0
+2022-12-31,County,LA Louisiana,LA West Carroll Parish 22123,9,Housing Choice Vouchers,3,,West Carroll Parish,22123,73,86,63,100,6,21,2.0,124,281,368,10604,5388,10,18,57,11,3,27,-1,70,25,100,71,3,37,81,35,47,64,26,6,43,29,22,-1,40,40,-1,-1,60,-1,-1,-1,0,2,2,68,76,118,10,54,37,54,22,20,68,,,,,,LA,,,60.0
+2022-12-31,County,LA Louisiana,LA Winn Parish 22127,9,Housing Choice Vouchers,3,,Winn Parish,22127,95,136,123,95,7,8,2.2,266,341,489,13837,6399,10,15,40,18,17,35,-1,62,33,86,54,2,44,82,43,29,55,18,6,50,20,24,1,88,86,1,-1,12,1,-1,-1,1,1,12,38,100,137,28,33,39,32,25,52,75,,,,,,LA,,,12.0
+2022-12-31,County,,22XXX,9,Housing Choice Vouchers,3,,Missing County,22XXX,1048,82,909,100,7,0,2.5,2285,2,818,16051,6385,14,17,26,9,34,36,0,58,-1,-1,-1,1,52,82,51,24,81,19,3,65,17,15,0,95,93,0,0,5,1,0,0,2,0,-1,6,0,165,92,3,2,1,-1,-1,-1,,,,,,LA,,,5.0
